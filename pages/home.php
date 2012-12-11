@@ -1,3 +1,1 @@
-<div class="content_wrap home">
-
-</div>
+<h1>سلام دداش گلم .</h1>

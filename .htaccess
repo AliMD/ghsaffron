@@ -247,13 +247,8 @@ FileETag None
 </FilesMatch>
 
 # ----------------------------------------------------------------------
-# Search Engine Friendly URLs (SEF) for ParsEngCo (This website only)
+# Search Engine Friendly URLs (SEF) for This website only.
 # ----------------------------------------------------------------------
-
-# Rewrite Projects and Products pages
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(projects|products)/(\d)/(.*)$ index.php?page=$1&cat=$2&desc=$3 [L,NC,QSA,T=text/html]
 
 # Rewrite Other pages with descriptions
 RewriteCond %{REQUEST_FILENAME} !-f
