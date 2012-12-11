@@ -6,6 +6,7 @@ $cache = new MicroCache("index ".strtolower($_GET['page']).$_GET['cat']);
 
 $cache->lifetime = 7*24*60*60; // 1 week
 $cache->patch = 'cachetmp/';
+$cache->cache_on = false; // turn off caching for debuge mode.
 
 if(!isset($_GET['clear_cache']) && $cache->check()){
 	die($cache->out());
