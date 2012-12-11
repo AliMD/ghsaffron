@@ -27,11 +27,12 @@ This is the source for the main Ghasem Saffron company website, found at [ghsaff
 ## Change Log
 
 #### HEAD (now)
+  * Design Architecture Structure.
   * [View full changes](https://github.com/AliMD/ghsaffron/compare/v0.1...master)
 
 #### v0.1 (10/08/2012)
-  * Under Dev
-  * Graphic Design
+  * Under Dev.
+  * Graphic Design.
   * [View full changes](https://github.com/AliMD/ghsaffron/compare/a36063436b07e4a454988886b501311b7c4a08ae...faab5824274a446ba1574d2f8be6ee273faeb78f)
 
 ## Contributing
@@ -99,7 +100,7 @@ Please follow this process; it's the best way to get your work included in the p
 ## All rights reserved ###
 Please note that ghsaffron.com is a curated site and that we reserve the right to refuse any listing for any reason.  
   
-The [ParsEng.co](http://ghsaffron.com) source code is released under [MIT License](http://opensource.org/licenses/MIT).  
+The [ghsaffron.co](http://ghsaffron.com) source code is released under [MIT License](http://opensource.org/licenses/MIT).  
 
 ## A 1Devs Website
 #### Produced by The<i>One</i>Developers - Web Department  
