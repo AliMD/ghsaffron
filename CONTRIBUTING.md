@@ -30,32 +30,32 @@ Please follow this process; it's the best way to get your work included in the p
 1. [Fork](http://help.github.com/fork-a-repo/) the project.
 
 2. Clone your fork (`git clone
-   https://github.com/<your-username>/ghsaffron.git`).
+  https://github.com/<your-username>/ghsaffron.git`).
 
 3. Add an `upstream` remote (`git remote add upstream
-   https://github.com/AliMD/ghsaffron.git`).
+  https://github.com/AliMD/ghsaffron.git`).
 
 4. Get the latest changes from upstream (e.g. `git pull upstream
-   <dev-branch>`).
+  <dev-branch>`).
 
 5. Create a new topic branch to contain your feature, change, or fix (`git
-   checkout -b <topic-branch-name>`).
+  checkout -b <topic-branch-name>`).
 
 6. Make sure that your changes adhere to the current coding conventions used
-   throughout the project - indentation, accurate comments, etc. Please update
-   any documentation that is relevant to the change you are making.
+  throughout the project - indentation, accurate comments, etc. Please update
+  any documentation that is relevant to the change you are making.
 
 7. Commit your changes in logical chunks; use git's [interactive
-   rebase](https://help.github.com/articles/interactive-rebase) feature to tidy
-   up your commits before making them public. Please adhere to these [git commit
-   message
-   guidelines](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
-   or your pull request is unlikely be merged into the main project.
+  rebase](https://help.github.com/articles/interactive-rebase) feature to tidy
+  up your commits before making them public. Please adhere to these [git commit
+  message
+  guidelines](http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html)
+  or your pull request is unlikely be merged into the main project.
 
 8. Locally merge (or rebase) the upstream branch into your topic branch.
 
 9. Push your topic branch up to your fork (`git push origin
-   <topic-branch-name>`).
+  <topic-branch-name>`).
 
 10. [Open a Pull Request](http://help.github.com/send-pull-requests/) with a
-    clear title and description. Please mention which browsers you tested in.
+  clear title and description. Please mention which browsers you tested in.
