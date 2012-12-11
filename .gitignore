@@ -7,16 +7,11 @@
 #Windows
 Thumbs.db
 Desktop.ini
-*.psd
 $RECYCLE.BIN/
 
 #SublimeText
 *.sublime-project
 *.sublime-workspace
-
-#Managers Files
-Designs/
-*.xmind
 
 #admin panel
 admin/
@@ -24,6 +19,7 @@ admin/
 #Private files
 backup/*_admin.sql
 app/config.php
+*.psd
 
 #Cache temp dir
 cachetmp/
