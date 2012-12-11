@@ -9,19 +9,9 @@ inc('header');
 
 echo '<div class="container">';
 
-	inc('menu');
-
-	echo "<div class='ajax_loader'>";
-
-		inc($template['page'],'pages');
-
-		echo "<span class='ajax_page_title' hidden='hidden'>$template[title]</span>";
-
-	echo "</div>";
+	inc($template['page'],'pages');
 
 echo '</div>';
-
-inc('slideshow');
 
 inc('analytic');
 
