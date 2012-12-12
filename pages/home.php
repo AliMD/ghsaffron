@@ -1,5 +1,4 @@
-<div class="background"></div>
-<header class="bottom">
+<header>
 		<menu>MENU
 			<ul>
 				<li>
@@ -22,5 +21,9 @@
 				</li>
 			</ul>
 		</menu>
-		<div class="logo"></div>
+		<div class="logo">LOGO</div>
 </header>
+<section class="content_wrap">
+	<div class="home">HOME</div>
+	<div class="products">products</div>
+</section>

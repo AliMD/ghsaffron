@@ -20,40 +20,61 @@ body {
 	background-color: black;
 }
 
-div.background {
-	background-image: url('Designs/1_main_page_loading.jpg');
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: top center;
+div.container {
+	background-color: gray;
+	overflow: hidden;
 	height: 650px;
 	width: 830px;
-	margin: 0 auto;
+	position: relative;
 }
 
-header.bottom {
+header {
 	height: 300px;
-	width: 830px;
-	background-color: rgba(220,0,0,0.8);
-	margin: 0 auto;
-	position: relative;
+	width: inherit;
+	background-color: rgba(220,0,0,0.7);
+	margin: 10px auto 0;
 	bottom: 0;
 	padding-top: 1px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 20;
 }
 
-header.bottom menu {
+header menu {
 	background-color: rgba(100,120,90,0.5);
 	width: 450px;
 	height: 100px;
 	margin: 40px auto 0;
 }
 
-header.bottom div.logo {
+header div.logo {
 	position: absolute;
 	top:200px;
 	left:0;
 	right: 0;
 	margin: 0 auto;
-	background-color: rgba(0,120,90,0.5);
+	background-color: rgba(0,120,90,0.8);
 	width: 150px;
 	height: 150px;
+}
+
+section.content_wrap {
+	outline: 1px solid red;
+	width: inherit;
+	height: 390px;
+	margin: -40px auto 0;
+	position: absolute;
+	top: 300px;
+	z-index: 10;
+	overflow: hidden;
+}
+
+section.content_wrap div.home,
+section.content_wrap div.products {
+	width: inherit;
+	height: 350px;
+	margin-bottom: 100px;
+	background-color: rgba(90,0,190,0.5);
 }
