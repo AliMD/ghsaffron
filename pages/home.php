@@ -40,9 +40,9 @@
 		</section>
 		<div class="shadow"></div>
 	</div>
-	<div class="product">product
-		<div class="scroll">
-			<div class="prd_01">
+	<div class="product">
+		<div class="scroll wx">
+			<div class="prd_01 mr1">
 				<div class="txt left">
 					<h4></h4>
 					<p></p>
@@ -54,7 +54,7 @@
 					<p></p>
 				</div>
 			</div>
-			<div class="prd_03">
+			<div class="prd_03 ml1">
 				<div class="txt left">
 					<h4></h4>
 					<p></p>
@@ -65,9 +65,9 @@
 		<div class="back"></div>
 		<div class="shadow"></div>
 	</div>
-	<div class="certificates">Certificates
-		<div class="scroll">
-			<div class="cert_01">
+	<div class="certificates">
+		<div class="scroll wx">
+			<div class="cert_01 mr1">
 				<div class="txt left">
 					<h4></h4>
 					<p></p>
@@ -79,7 +79,7 @@
 					<p></p>
 				</div>
 			</div>
-			<div class="cert_03">
+			<div class="cert_03 ml1">
 				<div class="txt left">
 					<h4></h4>
 					<p></p>
@@ -87,10 +87,12 @@
 			</div>
 		</div>
 		<div class="shadow"></div>
-		<div class="cert_tumb_01"></div>
-		<div class="cert_tumb_02"></div>
-		<div class="cert_tumb_03"></div>
-		<div class="next"></div>
-		<div class="back"></div>
+		<section class="thumb">
+			<div class="cert_tumb_01"></div>
+			<div class="cert_tumb_02"></div>
+			<div class="cert_tumb_03"></div>
+			<div class="next"></div>
+			<div class="back"></div>
+		</section>
 	</div>
 </section>
