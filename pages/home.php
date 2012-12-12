@@ -33,9 +33,11 @@
 	<div class="products_list">products_list
 		<h4></h4>
 		<div class="line"></div>
-		<div class="cat_01 left"></div>
-		<div class="cat_02 mla mra"></div>
-		<div class="cat_03 right"></div>
+		<section class="cat_list mla mra">
+			<div class="cat_01 left"></div>
+			<div class="cat_02 right"></div>
+			<div class="cat_03"></div>
+		</section>
 		<div class="shadow"></div>
 	</div>
 	<div class="product">product
