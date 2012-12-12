@@ -129,4 +129,79 @@ div.products_list div.shadow {
 
 }
 
+div.content_wrap div.product {
+	
+}
 
+div.product div.scroll {
+	height: 350px;
+	position: absolute;
+	left: 0;
+	/*overflow: hidden*/
+}
+
+div.product div.scroll > div {
+	width: 832px;
+	height: inherit;
+	float: left;
+	background-position: right center;
+	outline: 1px solid red;
+}
+
+div.product div.scroll > div div.txt {
+	float: left;
+	width: 350px;
+	height: inherit;
+	outline: 1px solid yellow;
+}
+
+div.next {
+
+}
+
+div.back {
+
+}
+
+div.certificates div.shadow {
+
+}
+
+div.content_wrap div.certificates {
+	
+}
+
+div.certificates div.scroll {
+	height: 220px;
+	position: absolute;
+	left: 0;
+	/*overflow: hidden*/
+}
+
+div.certificates div.scroll > div {
+	width: 832px;
+	height: inherit;
+	float: left;
+	background-position: right center;
+	outline: 1px solid red;
+}
+
+div.certificates div.scroll > div div.txt {
+	float: left;
+	width: 350px;
+	height: inherit;
+	outline: 1px solid yellow;
+}
+
+section.cat_list div.cat_01,
+section.cat_list div.cat_02 {
+	width: 150px;
+	height: 150px;
+	outline: 2px solid blue;
+}
+
+section.cat_list div.cat_03 {
+	outline: 2px solid red;
+	height: 150px;
+	margin: 0 175px;
+}
