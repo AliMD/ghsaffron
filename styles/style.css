@@ -72,7 +72,9 @@ section.content_wrap {
 }
 
 section.content_wrap div.home,
-section.content_wrap div.products {
+section.content_wrap div.products_list,
+section.content_wrap div.product, 
+section.content_wrap div.certificates {
 	width: inherit;
 	height: 350px;
 	margin-bottom: 100px;
@@ -84,6 +86,11 @@ section.content_wrap div.home {
 	background-position: right center;
 }
 
+section.content_wrap div.products_list {
+	background-image: url('');
+	background-position: right center;
+}
+
 div.home div.txt {
 	outline: 1px solid red;
 	float: left;
@@ -91,3 +98,35 @@ div.home div.txt {
 	height: 290px;
 	margin-top: 55px;
 }
+
+section.content_wrap div.products_list {
+
+}
+
+div.products_list div.line {
+
+}
+
+section.cat_list {
+	width: 500px;
+	margin-top: 80px;
+}
+
+section.cat_list div.cat_01,
+section.cat_list div.cat_02 {
+	width: 150px;
+	height: 150px;
+	outline: 2px solid blue;
+}
+
+section.cat_list div.cat_03 {
+	outline: 2px solid red;
+	height: 150px;
+	margin: 0 175px;
+}
+
+div.products_list div.shadow {
+
+}
+
+
