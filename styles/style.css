@@ -15,3 +15,45 @@ body:lang(en-US){
 }
 
 /* TODO: add that lins to 1styles.css */
+
+body {
+	background-color: black;
+}
+
+div.background {
+	background-image: url('Designs/1_main_page_loading.jpg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top center;
+	height: 650px;
+	width: 830px;
+	margin: 0 auto;
+}
+
+header.bottom {
+	height: 300px;
+	width: 830px;
+	background-color: rgba(220,0,0,0.8);
+	margin: 0 auto;
+	position: relative;
+	bottom: 0;
+	padding-top: 1px;
+}
+
+header.bottom menu {
+	background-color: rgba(100,120,90,0.5);
+	width: 450px;
+	height: 100px;
+	margin: 40px auto 0;
+}
+
+header.bottom div.logo {
+	position: absolute;
+	top:200px;
+	left:0;
+	right: 0;
+	margin: 0 auto;
+	background-color: rgba(0,120,90,0.5);
+	width: 150px;
+	height: 150px;
+}
