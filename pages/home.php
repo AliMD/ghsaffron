@@ -1,5 +1,6 @@
 <header>
-		<menu>MENU
+	<section class="banner">
+		<nav>MENU
 			<ul>
 				<li>
 					<a href=""></a>
@@ -20,79 +21,77 @@
 					<a href=""></a>
 				</li>
 			</ul>
-		</menu>
-		<div class="logo">LOGO</div>
+		</nav>
+		<h1 class="logo"><img src="" width="0" height="0" alt="Ghasem Saffron" /></h1>
+	</section>
 </header>
-<section class="content_wrap">
-	<div class="home">HOME
-		<div class="txt">
-			<h4></h4>
+<div class="content_wrap">
+	<section class="home">HOME
+		<div class="description">
+			<h2></h2>
 			<p></p>
 		</div>
-	</div>
-	<div class="products_list">products_list
-		<h4></h4>
+	</section>
+	<section class="products_list">products_list
+		<h2></h2>
 		<div class="line"></div>
 		<section class="cat_list mla mra">
 			<div class="cat_01 left"></div>
 			<div class="cat_02 right"></div>
 			<div class="cat_03"></div>
 		</section>
-		<div class="shadow"></div>
-	</div>
-	<div class="product">
+	</section>
+	<section class="product">
 		<div class="scroll wx">
 			<div class="prd_01 mr1">
-				<div class="txt left">
-					<h4></h4>
+				<div class="description left">
+					<h2></h2>
 					<p></p>
 				</div>
 			</div>
 			<div class="prd_02">
-				<div class="txt left">
-					<h4></h4>
+				<div class="description left">
+					<h2></h2>
 					<p></p>
 				</div>
 			</div>
 			<div class="prd_03 ml1">
-				<div class="txt left">
-					<h4></h4>
+				<div class="description left">
+					<h2></h2>
 					<p></p>
 				</div>
 			</div>
 		</div>
 		<div class="next"></div>
 		<div class="back"></div>
-		<div class="shadow"></div>
-	</div>
-	<div class="certificates">
+	</section>
+	<section class="certificates">
 		<div class="scroll wx">
 			<div class="cert_01 mr1">
-				<div class="txt left">
-					<h4></h4>
+				<div class="description left">
+					<h2></h2>
 					<p></p>
 				</div>
 			</div>
 			<div class="cert_02">
-				<div class="txt left">
-					<h4></h4>
+				<div class="description left">
+					<h2></h2>
 					<p></p>
 				</div>
 			</div>
 			<div class="cert_03 ml1">
-				<div class="txt left">
-					<h4></h4>
+				<div class="description left">
+					<h2></h2>
 					<p></p>
 				</div>
 			</div>
 		</div>
-		<div class="shadow"></div>
 		<section class="thumb">
 			<div class="cert_tumb_01"></div>
 			<div class="cert_tumb_02"></div>
 			<div class="cert_tumb_03"></div>
-			<div class="next"></div>
-			<div class="back"></div>
 		</section>
-	</div>
-</section>
+		<div class="next"></div>
+		<div class="back"></div>
+	</section>
+</div>

@@ -28,7 +28,7 @@ div.container {
 	position: relative;
 }
 
-header {
+section.banner {
 	height: 300px;
 	width: inherit;
 	background-color: rgba(220,0,0,0.7);
@@ -42,14 +42,14 @@ header {
 	z-index: 20;
 }
 
-header menu {
+section.banner nav {
 	background-color: rgba(100,120,90,0.5);
 	width: 450px;
 	height: 100px;
 	margin: 40px auto 0;
 }
 
-header div.logo {
+section.banner h1.logo {
 	position: absolute;
 	top:200px;
 	left:0;
@@ -60,7 +60,7 @@ header div.logo {
 	height: 150px;
 }
 
-section.content_wrap {
+div.content_wrap {
 	outline: 1px solid red;
 	width: inherit;
 	height: 390px;
@@ -71,27 +71,24 @@ section.content_wrap {
 	/*overflow: hidden;*/
 }
 
-section.content_wrap div.home,
-section.content_wrap div.products_list,
-section.content_wrap div.product, 
-section.content_wrap div.certificates {
+div.content_wrap > section {
 	width: inherit;
-	height: 350px;
+	height: inherit;
 	margin-bottom: 100px;
 	background-color: rgba(90,0,190,0.5);
 }
 
-section.content_wrap div.home {
+div.content_wrap section.home {
 	background-image: url('');
 	background-position: right center;
 }
 
-section.content_wrap div.products_list {
+div.content_wrap section.products_list {
 	background-image: url('');
 	background-position: right center;
 }
 
-div.home div.txt {
+section.home div.description {
 	outline: 1px solid red;
 	float: left;
 	width: 400px;
@@ -99,11 +96,11 @@ div.home div.txt {
 	margin-top: 55px;
 }
 
-section.content_wrap div.products_list {
+div.content_wrap section.products_list {
 
 }
 
-div.products_list div.line {
+section.products_list div.line {
 
 }
 
@@ -125,22 +122,18 @@ section.cat_list div.cat_03 {
 	margin: 0 175px;
 }
 
-div.products_list div.shadow {
-
-}
-
-div.content_wrap div.product {
+div.content_wrap section.product {
 	
 }
 
-div.product div.scroll {
-	height: 350px;
+section.product div.scroll {
+	height: inherit;
 	position: absolute;
 	left: 0;
 	/*overflow: hidden*/
 }
 
-div.product div.scroll > div {
+section.product div.scroll > div {
 	width: 832px;
 	height: inherit;
 	float: left;
@@ -148,7 +141,7 @@ div.product div.scroll > div {
 	outline: 1px solid red;
 }
 
-div.product div.scroll > div div.txt {
+section.product div.scroll > div div.description {
 	float: left;
 	width: 350px;
 	height: inherit;
@@ -163,22 +156,18 @@ div.back {
 
 }
 
-div.certificates div.shadow {
-
-}
-
-div.content_wrap div.certificates {
+div.content_wrap section.certificates {
 	
 }
 
-div.certificates div.scroll {
+section.certificates div.scroll {
 	height: 220px;
 	position: absolute;
 	left: 0;
 	/*overflow: hidden*/
 }
 
-div.certificates div.scroll > div {
+section.certificates div.scroll > div {
 	width: 832px;
 	height: inherit;
 	float: left;
@@ -186,7 +175,7 @@ div.certificates div.scroll > div {
 	outline: 1px solid red;
 }
 
-div.certificates div.scroll > div div.txt {
+section.certificates div.scroll > div div.description {
 	float: left;
 	width: 350px;
 	height: inherit;
