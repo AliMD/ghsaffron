@@ -157,11 +157,12 @@ div.back {
 }
 
 div.content_wrap section.certificates {
-	
+	padding-top: 1px;
+	position: relative;
 }
 
 section.certificates div.scroll {
-	height: 220px;
+	height: 260px;
 	position: absolute;
 	left: 0;
 	/*overflow: hidden*/
@@ -193,4 +194,23 @@ section.cat_list div.cat_03 {
 	outline: 2px solid red;
 	height: 150px;
 	margin: 0 175px;
+}
+
+section.certificates section.thumb {
+	width: 300px;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	outline: 1px solid red;
+}
+
+section.thumb > div {
+	width: 100px;
+	height: 100px;
+	float: left;
+	outline: 1px solid blue;
+}
+
+section.thumb div.last {
+	float: none !important;
 }

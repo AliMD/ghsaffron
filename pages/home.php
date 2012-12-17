@@ -89,7 +89,7 @@
 		<section class="thumb">
 			<div class="cert_tumb_01"></div>
 			<div class="cert_tumb_02"></div>
-			<div class="cert_tumb_03"></div>
+			<div class="cert_tumb_03 last mla"></div>
 		</section>
 		<div class="next"></div>
 		<div class="back"></div>
