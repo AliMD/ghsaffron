@@ -1,24 +1,24 @@
 <header>
 	<section class="banner">
-		<nav>MENU
+		<nav>
 			<ul>
 				<li>
-					<a href=""></a>
+					<a href="">home</a>
 				</li>
 				<li>
-					<a href=""></a>
+					<a href="">products</a>
 				</li>
 				<li>
-					<a href=""></a>
+					<a href="">certificates</a>
 				</li>
 				<li>
-					<a href=""></a>
+					<a href="">about us</a>
 				</li>
 				<li>
-					<a href=""></a>
+					<a href="">branches</a>
 				</li>
 				<li>
-					<a href=""></a>
+					<a href="">contact us</a>
 				</li>
 			</ul>
 		</nav>
