@@ -22,7 +22,7 @@
 				</li>
 			</ul>
 		</nav>
-		<h1 class="logo"><img src="" width="0" height="0" alt="Ghasem Saffron" /></h1>
+		<h1 class="logo"><img src="images/logo.png" width="201" height="181" alt="Ghasem Saffron" /></h1>
 	</section>
 </header>
 <div class="content_wrap">
