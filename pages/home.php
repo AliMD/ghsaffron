@@ -2,23 +2,23 @@
 	<section class="banner">
 		<nav>
 			<ul>
-				<li>
-					<a href="">home</a>
+				<li class="item1">
+					<a href="#">home</a>
 				</li>
-				<li>
-					<a href="">products</a>
+				<li class="item2">
+					<a href="#">products</a>
 				</li>
-				<li>
-					<a href="">certificates</a>
+				<li class="item3">
+					<a href="#">certificates</a>
 				</li>
-				<li>
-					<a href="">about us</a>
+				<li class="item4">
+					<a href="#">about us</a>
 				</li>
-				<li>
-					<a href="">branches</a>
+				<li class="item5">
+					<a href="#">branches</a>
 				</li>
-				<li>
-					<a href="">contact us</a>
+				<li class="item6">
+					<a href="#">contact us</a>
 				</li>
 			</ul>
 		</nav>

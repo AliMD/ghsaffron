@@ -42,14 +42,60 @@ section.banner {
 	z-index: 20;
 }
 
-section.banner nav {
-	background-color: rgba(100,120,90,0.5);
-	width: 450px;
-	height: 100px;
+nav ul {
+	background-image: url('images/menu-bg.png');
+	width: 681px;
+	height: 133px;
 	margin: 40px auto 0;
 }
 
-section.banner h1.logo {
+nav li {
+	float: left;
+	margin-top: 40px;
+}
+
+nav li.item1 {
+	margin-left: 85px;
+	margin-top: 52px;
+	-webkit-transform: rotate(-6deg);
+}
+nav li.item2 {
+	margin-top: 46px;
+	-webkit-transform: rotate(-4deg);
+}
+nav li.item3 {
+	margin-top: 42px;
+	-webkit-transform: rotate(-1deg);
+}
+nav li.item4 {
+	margin-top: 41px;
+	-webkit-transform: rotate(1deg);
+}
+nav li.item5 {
+	margin-top: 45px;
+	-webkit-transform: rotate(4deg);
+}
+nav li.item6 {
+	margin-top: 53px;
+	-webkit-transform: rotate(6deg);
+}
+
+nav li a {
+	display			: block;
+	text-transform	: uppercase;
+	text-decoration	: none;
+	color			: #6E1312;
+	padding			: 5px 7px 6px;
+	font-family		: "Courier New", Courier, monospace;
+	font-size		: 14px;
+	font-weight: bold;
+}
+
+nav li:hover a {
+	color: red;
+}
+
+h1.logo {
 	position: absolute;
 	top:200px;
 	left:0;
