@@ -42,8 +42,8 @@
 		</section>
 	</section>
 	<section class="product">
-		<div class="scroll wx">
-			<div class="prd_01 mr1">
+		<div class="prd_container wx">
+			<div class="prd_01 mr2">
 				<div class="description left">
 					<h2></h2>
 					<p></p>
@@ -55,7 +55,7 @@
 					<p></p>
 				</div>
 			</div>
-			<div class="prd_03 ml1">
+			<div class="prd_03 ml2">
 				<div class="description left">
 					<h2></h2>
 					<p></p>
