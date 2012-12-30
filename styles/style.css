@@ -1,7 +1,35 @@
 
 /* global section
 -------------------------------------------------- */
+:lang(fa-IR) {
+	/*font-family	: 'Nazanin';*/
+	direction	: rtl;
+}
+body:lang(fa-IR) {
+	text-align: right;
+}
 
+:lang(en-US) {
+	direction	: ltr;
+	font-family:  Arial, Helvetica, sans-serif;
+}
+body:lang(en-US) {
+	text-align: left;
+}
+
+/* TODO: add that lins to 1styles.css */
+
+body {
+	background-color: black;
+}
+
+div.container {
+	background-color: gray;
+	/*overflow: hidden;*/
+	height: 650px;
+	width: 830px;
+	position: relative;
+}
 
 
 /* Page Menu
