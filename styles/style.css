@@ -2,7 +2,7 @@
 	/*font-family	: 'Nazanin';*/
 	direction	: rtl;
 }
-body:lang(fa-IR){
+body:lang(fa-IR) {
 	text-align: right;
 }
 
@@ -10,8 +10,276 @@ body:lang(fa-IR){
 	direction	: ltr;
 	font-family:  Arial, Helvetica, sans-serif;
 }
-body:lang(en-US){
+body:lang(en-US) {
 	text-align: left;
 }
 
 /* TODO: add that lins to 1styles.css */
+
+body {
+	background-color: black;
+}
+
+div.container {
+	background-color: gray;
+	/*overflow: hidden;*/
+	height: 650px;
+	width: 830px;
+	position: relative;
+}
+
+section.banner {
+	height: 300px;
+	width: inherit;
+	background-color: rgba(220,0,0,0.7);
+	margin: 10px auto 0;
+	bottom: 0;
+	padding-top: 1px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 20;
+}
+
+nav ul {
+	background-image: url('images/menu-bg.png');
+	width: 681px;
+	height: 133px;
+	margin: 40px auto 0;
+}
+
+nav li {
+	float: left;
+	margin-top: 40px;
+}
+
+nav li.item1 {
+	margin-left: 85px;
+	margin-top: 52px;
+	-webkit-transform: rotate(-6deg);
+}
+nav li.item2 {
+	margin-top: 46px;
+	-webkit-transform: rotate(-4deg);
+}
+nav li.item3 {
+	margin-top: 42px;
+	-webkit-transform: rotate(-1deg);
+}
+nav li.item4 {
+	margin-top: 41px;
+	-webkit-transform: rotate(1deg);
+}
+nav li.item5 {
+	margin-top: 45px;
+	-webkit-transform: rotate(4deg);
+}
+nav li.item6 {
+	margin-top: 53px;
+	-webkit-transform: rotate(6deg);
+}
+
+nav li a {
+	display			: block;
+	text-transform	: uppercase;
+	text-decoration	: none;
+	color			: #6E1312;
+	padding			: 5px 7px 6px;
+	font-family		: "Courier New", Courier, monospace;
+	font-size		: 14px;
+	font-weight: bold;
+}
+
+nav li:hover a {
+	color: red;
+}
+
+h1.logo {
+	position: absolute;
+	top:200px;
+	left:0;
+	right: 0;
+	margin: 0 auto;
+	width: 201px;
+	height: 181px;
+}
+
+div.content_wrap {
+	outline: 1px solid red;
+	width: inherit;
+	height: 390px;
+	margin: -40px auto 0;
+	position: absolute;
+	top: 300px;
+	z-index: 10;
+	/*overflow: hidden;*/
+}
+
+div.content_wrap > section {
+	width: inherit;
+	height: inherit;
+	margin-bottom: 100px;
+	background-color: #FFF;
+}
+
+div.content_wrap section.home {
+	background-image: url('images/home.png');
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+div.content_wrap section.products_list {
+	background-image: url('');
+	background-position: right center;
+}
+
+section.home div.description {
+	outline: 1px solid red;
+	float: left;
+	width: 400px;
+	height: 290px;
+	margin-top: 55px;
+}
+
+div.content_wrap section.products_list {
+
+}
+
+section.products_list div.line {
+
+}
+
+section.cat_list {
+	width: 500px;
+	margin-top: 80px;
+}
+
+section.cat_list div.cat_01,
+section.cat_list div.cat_02 {
+	width: 150px;
+	height: 150px;
+	outline: 2px solid blue;
+}
+
+section.cat_list div.cat_03 {
+	outline: 2px solid red;
+	height: 150px;
+	margin: 0 175px;
+}
+
+div.content_wrap section.product {
+	position: relative;
+	overflow: hidden
+}
+
+section.product div.prd_container {
+	height: inherit;
+	position: absolute;
+	left: 0;
+}
+
+section.product div.prd_container > div {
+	width: 790px;
+	height: inherit;
+	float: left;
+	background-position: right center;
+	background-repeat: no-repeat;
+	background-image: url('images/prd.png');
+	outline: 1px solid red;
+}
+section.product div.prd_container div.prd_01 {
+
+}
+section.product div.prd_container div.prd_02 {
+	
+}
+section.product div.prd_container div.prd_03 {
+	
+}
+
+section.product div.prd_container > div div.description {
+	float: left;
+	width: 280px;
+	height: inherit;
+	outline: 1px solid yellow;
+}
+
+div.next {
+	background-image: url('images/next.png');
+	width: 26px;
+	height: 41px;
+	position: absolute;
+	right: 10px;
+	top: 180px;
+	cursor: pointer;
+}
+
+div.back {
+	background-image: url('images/back.png');
+	width: 26px;
+	height: 41px;
+	position: absolute;
+	left: 10px;
+	top: 180px;
+	cursor: pointer;
+}
+
+div.content_wrap section.certificates {
+	padding-top: 1px;
+	position: relative;
+}
+
+section.certificates div.scroll {
+	height: 260px;
+	position: absolute;
+	left: 0;
+	/*overflow: hidden*/
+}
+
+section.certificates div.scroll > div {
+	width: 832px;
+	height: inherit;
+	float: left;
+	background-position: right center;
+	outline: 1px solid red;
+}
+
+section.certificates div.scroll > div div.description {
+	float: left;
+	width: 350px;
+	height: inherit;
+	outline: 1px solid yellow;
+}
+
+section.cat_list div.cat_01,
+section.cat_list div.cat_02 {
+	width: 150px;
+	height: 150px;
+	outline: 2px solid blue;
+}
+
+section.cat_list div.cat_03 {
+	outline: 2px solid red;
+	height: 150px;
+	margin: 0 175px;
+}
+
+section.certificates section.thumb {
+	width: 300px;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	outline: 1px solid red;
+}
+
+section.thumb > div {
+	width: 100px;
+	height: 100px;
+	float: left;
+	outline: 1px solid blue;
+}
+
+section.thumb div.last {
+	float: none !important;
+}
