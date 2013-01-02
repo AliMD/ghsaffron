@@ -103,6 +103,7 @@ h1.logo {
 	margin: 0 auto;
 	width: 201px;
 	height: 181px;
+	opacity: 0.95;
 }
 
 div.content_wrap {
@@ -226,6 +227,7 @@ div.next {
 	right: 10px;
 	top: 180px;
 	cursor: pointer;
+	background-repeat: no-repeat;
 }
 
 div.back {
@@ -236,6 +238,7 @@ div.back {
 	left: 10px;
 	top: 180px;
 	cursor: pointer;
+	background-repeat: no-repeat;
 }
 
 div.content_wrap section.certificates {
@@ -243,22 +246,19 @@ div.content_wrap section.certificates {
 	position: relative;
 }
 
-section.certificates div.scroll {
-	height: 260px;
+section.certificates div.background_holder > div {
+	width: 832px;
+	height: 250px;
 	position: absolute;
 	left: 0;
-	/*overflow: hidden*/
-}
-
-section.certificates div.scroll > div {
-	width: 832px;
-	height: inherit;
-	float: left;
+	top: 0;
+	right: 0;
+	bottom: 0;
 	background-position: right center;
 	outline: 1px solid red;
 }
 
-section.certificates div.scroll > div div.description {
+section.certificates > div div.description {
 	float: left;
 	width: 350px;
 	height: inherit;
@@ -281,26 +281,20 @@ section.cat_list div.cat_03 {
 	
 }
 section.cat_list div.cat_03 {
-	outline: 2px solid red;
-	height: 150px;
-	margin: 0 175px;
+
 }
 
-section.certificates section.thumb {
-	width: 300px;
+section.certificates section.thumb_holder {
 	height: 100px;
 	position: absolute;
 	bottom: 0;
+	left: 0;
 	outline: 1px solid red;
 }
 
-section.thumb > div {
+section.thumb_holder > div {
 	width: 100px;
 	height: 100px;
 	float: left;
 	outline: 1px solid blue;
-}
-
-section.thumb div.last {
-	float: none !important;
 }
