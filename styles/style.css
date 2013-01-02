@@ -106,7 +106,7 @@ h1.logo {
 }
 
 div.content_wrap {
-	outline: 1px solid red;
+	outline: 1px solid green;
 	width: inherit;
 	height: 390px;
 	margin: -40px auto 0;
@@ -170,7 +170,7 @@ section.cat_list div.cat_03 {
 
 div.content_wrap section.product {
 	position: relative;
-	overflow: hidden
+	overflow: hidden;
 }
 
 section.product div.prd_container {
@@ -186,7 +186,7 @@ section.product div.prd_container > div {
 	background-position: right center;
 	background-repeat: no-repeat;
 	background-image: url('images/prd.png');
-	outline: 1px solid red;
+	outline: 1px solid green;
 }
 section.product div.prd_container div.prd_01 {
 
@@ -198,11 +198,24 @@ section.product div.prd_container div.prd_03 {
 	
 }
 
-section.product div.prd_container > div div.description {
+div.prd_container div.description {
 	float: left;
 	width: 280px;
 	height: inherit;
 	outline: 1px solid yellow;
+}
+div.prd_container div.description p {
+	font-size: 20px;
+	color:#333;
+	text-align: justify;
+	font-family: "monospace";
+	margin-left: 36px;
+	width: 260px;
+	padding-top: 58px;
+	line-height: 1.25;
+}
+div.prd_container div.description h2 {
+
 }
 
 div.next {
@@ -258,7 +271,15 @@ section.cat_list div.cat_02 {
 	height: 150px;
 	outline: 2px solid blue;
 }
+section.cat_list div.cat_01 {
+	
+}
+section.cat_list div.cat_02 {
 
+}
+section.cat_list div.cat_03 {
+	
+}
 section.cat_list div.cat_03 {
 	outline: 2px solid red;
 	height: 150px;
