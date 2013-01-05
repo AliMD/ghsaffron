@@ -573,7 +573,18 @@ input.w24, textarea.w24{width:938px;border-width:1px;padding-left:5px;padding-ri
 .f38{font-size:4.75em}
 .f39{font-size:4.875em}
 .f40{font-size:5em}
-body{color:#dcdcdc;background-color:#222426;}
+body{color:#222426;background-color:#dcdcdc;}
+div.contact-us section.form{width:610px;}
+div.contact-us section.form .input-left{width:230px}
+div.contact-us section.form .err::-webkit-input-placeholder{color:#f00}
+div.contact-us section.form .err:-moz-placeholder{color:#f00}
+div.contact-us section.form input{width:200px;color:#eee;margin:6px 0;border:1px solid #333;-webkit-border-radius:5px;border-radius:5px;background-color:#1b1b1b;padding:7px 10px;-webkit-transition:border 500ms;-moz-transition:border 500ms;-o-transition:border 500ms;-ms-transition:border 500ms;transition:border 500ms;}
+div.contact-us section.form input.err{border:1px solid #f00}
+div.contact-us section.form input.btn_submit{-webkit-border-radius:3px;border-radius:3px;margin-right:14px;border:1px solid #2c2c2c;background:#111;text-align:center;width:80px;display:block;color:#fff;text-decoration:none;}
+div.contact-us section.form input.btn_submit:hover{background-color:#222}
+div.contact-us section.form input[type=reset]{margin-right:10px}
+div.contact-us section.form textarea{width:340px;height:164px;margin:6px 0 6px 4px;color:#eee;border:1px solid #333;-webkit-border-radius:5px;border-radius:5px;background-color:#1b1b1b;padding:5px 10px;-webkit-transition:border 500ms;-moz-transition:border 500ms;-o-transition:border 500ms;-ms-transition:border 500ms;transition:border 500ms;}
+div.contact-us section.form textarea.err{border:1px solid #f00}
 }@media print{*{background:transparent !important;color:#000 !important;-webkit-box-shadow:none !important;box-shadow:none !important;text-shadow:none !important}
 .noprint{display:none !important}
 a,a:visited{text-decoration:underline}
