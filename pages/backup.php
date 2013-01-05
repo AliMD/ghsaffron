@@ -22,7 +22,9 @@
 				</li>
 			</ul>
 		</nav>
-		<h1 class="logo"><img src="images/logo.png" width="201" height="181" alt="Ghasem Saffron" /></h1>
+		<h1 class="logo">
+			<img src="images/logo.png" width="201" height="181" alt="Ghasem Saffron" />
+		</h1>
 	</section>
 </header>
 <div class="content_wrap">
@@ -66,8 +68,8 @@
 		<div class="back"></div>
 	</section>
 	<section class="certificates">
-		<div class="scroll wx">
-			<div class="cert_01 mr1">
+		<div class="background_holder">
+			<div class="cert_01">
 				<div class="description left">
 					<h2></h2>
 					<p></p>
@@ -79,17 +81,25 @@
 					<p></p>
 				</div>
 			</div>
-			<div class="cert_03 ml1">
+			<div class="cert_03">
+				<div class="description left">
+					<h2></h2>
+					<p></p>
+				</div>
+			</div>
+			<div class="cert_04">
 				<div class="description left">
 					<h2></h2>
 					<p></p>
 				</div>
 			</div>
 		</div>
-		<section class="thumb">
-			<div class="cert_tumb_01"></div>
-			<div class="cert_tumb_02"></div>
-			<div class="cert_tumb_03 last mla"></div>
+		<div class="background_shadow"></div>
+		<section class="thumb_holder mla wx">
+			<div class="cert_tumb_01 left ml2"></div>
+			<div class="cert_tumb_02 left ml2"></div>
+			<div class="cert_tumb_03 left ml2"></div>
+			<div class="cert_tumb_04 left ml2"></div>
 		</section>
 		<div class="next"></div>
 		<div class="back"></div>
