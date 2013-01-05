@@ -75,10 +75,11 @@ h1.logo {
 	margin: 0 auto;
 	width: 201px;
 	height: 181px;
+	opacity: 0.95;
 }
 
 div.content_wrap {
-	outline: 1px solid red;
+	outline: 1px solid green;
 	width: inherit;
 	height: 390px;
 	margin: -40px auto 0;
@@ -142,7 +143,7 @@ section.cat_list div.cat_03 {
 
 div.content_wrap section.product {
 	position: relative;
-	overflow: hidden
+	overflow: hidden;
 }
 
 section.product div.prd_container {
@@ -158,7 +159,7 @@ section.product div.prd_container > div {
 	background-position: right center;
 	background-repeat: no-repeat;
 	background-image: url('images/prd.png');
-	outline: 1px solid red;
+	outline: 1px solid green;
 }
 section.product div.prd_container div.prd_01 {
 
@@ -170,11 +171,24 @@ section.product div.prd_container div.prd_03 {
 	
 }
 
-section.product div.prd_container > div div.description {
+div.prd_container div.description {
 	float: left;
 	width: 280px;
 	height: inherit;
 	outline: 1px solid yellow;
+}
+div.prd_container div.description p {
+	font-size: 20px;
+	color:#333;
+	text-align: justify;
+	font-family: "monospace";
+	margin-left: 36px;
+	width: 260px;
+	padding-top: 58px;
+	line-height: 1.25;
+}
+div.prd_container div.description h2 {
+
 }
 
 div.next {
@@ -185,6 +199,7 @@ div.next {
 	right: 10px;
 	top: 180px;
 	cursor: pointer;
+	background-repeat: no-repeat;
 }
 
 div.back {
@@ -195,6 +210,7 @@ div.back {
 	left: 10px;
 	top: 180px;
 	cursor: pointer;
+	background-repeat: no-repeat;
 }
 
 div.content_wrap section.certificates {
@@ -202,22 +218,19 @@ div.content_wrap section.certificates {
 	position: relative;
 }
 
-section.certificates div.scroll {
-	height: 260px;
+section.certificates div.background_holder > div {
+	width: 832px;
+	height: 250px;
 	position: absolute;
 	left: 0;
-	/*overflow: hidden*/
-}
-
-section.certificates div.scroll > div {
-	width: 832px;
-	height: inherit;
-	float: left;
+	top: 0;
+	right: 0;
+	bottom: 0;
 	background-position: right center;
 	outline: 1px solid red;
 }
 
-section.certificates div.scroll > div div.description {
+section.certificates > div div.description {
 	float: left;
 	width: 350px;
 	height: inherit;
@@ -230,28 +243,30 @@ section.cat_list div.cat_02 {
 	height: 150px;
 	outline: 2px solid blue;
 }
+section.cat_list div.cat_01 {
+	
+}
+section.cat_list div.cat_02 {
 
+}
 section.cat_list div.cat_03 {
-	outline: 2px solid red;
-	height: 150px;
-	margin: 0 175px;
+	
+}
+section.cat_list div.cat_03 {
+
 }
 
-section.certificates section.thumb {
-	width: 300px;
+section.certificates section.thumb_holder {
 	height: 100px;
 	position: absolute;
 	bottom: 0;
+	left: 0;
 	outline: 1px solid red;
 }
 
-section.thumb > div {
+section.thumb_holder > div {
 	width: 100px;
 	height: 100px;
 	float: left;
 	outline: 1px solid blue;
-}
-
-section.thumb div.last {
-	float: none !important;
 }
