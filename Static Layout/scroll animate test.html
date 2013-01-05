@@ -1,0 +1,230 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Doing scrollorama</title>
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<style type="text/css">
+		body {
+			background: #222438;
+			font-family: Georgia, Times New Roman, Times, serif;
+			font-weight: bold;
+			font-size: 30px;
+			text-align: center;
+		}
+
+		h1 {
+			font-size: 30px;
+			font-weight: normal;
+			margin: 0;
+			text-shadow: 0 2px 1px #000;
+			color: #FFB000;
+			font-family: 'Bowlby One SC',"Arial Black",Gadget,sans-serif;
+			text-transform: uppercase;
+		}
+
+		p {
+			width: 80%;
+			margin: 20px auto;
+			text-shadow: 0 2px 1px #000;
+			color: #C5C3DE;
+		}
+
+		.pages {
+			position: relative;
+			margin: 0 auto;
+			width: 1200px;
+			left: 0;
+			right: 0;
+			min-height: 600px;
+		}
+
+		#page1 h1{
+			position: relative;
+			margin-top: 100px;
+		}
+
+		#page2 h1{
+			position: relative;
+			margin-top: 100px;
+		}
+
+		#page3 h1{
+			padding-top: 100px;
+		}
+
+		#page4{
+			padding-top: 300px;
+			min-height: 300px;
+		}
+
+		#page4 p{
+			position: relative;
+			font-size: 35px;
+			opacity: 0.6;
+		}
+
+		#page4 #px2{
+			left: -150px;
+		}
+
+		#page4 #px3{
+			left: 150px;
+		}
+
+
+		#page5 p{
+			position: relative;
+		}
+		#page5 hr{
+			margin-top: 400px;
+		}
+
+		#page6 h1{
+			position: relative;
+			text-transform: none;
+			letter-spacing: 3px;
+		}
+
+		.chert{
+			width: 80px;
+			height: 80px;
+			border-radius: 10px;
+			background-color: red;
+			opacity: 0.7;
+			position: fixed;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			z-index: 10;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="content-wrapper">
+		
+		<section class="pages" id="page1">
+			<section class="chert"></section>
+			<h1>Page 1 occaecat nulla ex amet. </h1>
+			<p>Lorem ipsum magna laboris mollit ea officia nostrud reprehenderit ut deserunt in reprehenderit ex aliquip ea dolor reprehenderit anim est amet culpa proident non mollit do nulla irure elit consectetur nostrud eiusmod eu occaecat Ut labore eu est sed ex Duis irure reprehenderit fugiat non non velit velit culpa elit aute Ut non Excepteur sint officia labore in dolor nulla ea nulla elit nostrud esse nisi in laboris consequat consequat labore eiusmod consequat elit quis sint occaecat sit in commodo pariatur consequat consectetur dolore deserunt adipisicing non ullamco laborum cupidatat nisi dolor dolor dolor ad Duis minim laborum officia amet ea sunt ut dolor enim cupidatat aute. </p>
+		</section>
+
+		<section class="pages" id="page2">
+			<h1>Page 2 dolore officia tempor minim aute sed est. </h1>
+			<p>Lorem ipsum Duis in elit enim adipisicing do laborum aliquip in incididunt enim dolor amet in ea sed laboris nostrud id commodo ea Duis dolor dolor dolore laboris in cupidatat esse proident Ut in dolor cillum nisi cillum dolor mollit ea aliquip incididunt in dolore ad deserunt culpa aliqua dolore consectetur sed laboris ex cillum eu enim in anim proident in culpa eu ex labore eu sit est velit do sint cupidatat quis irure officia do voluptate id occaecat ex dolore esse dolore culpa elit cillum ea fugiat exercitation dolore occaecat nostrud occaecat ea tempor amet fugiat labore id id consectetur magna laboris in anim velit reprehenderit. </p>
+		</section>
+
+		<section class="pages" id="page3">
+			<h1>Page 4 enim ex nostrud voluptate id esse. </h1>
+			<p>Lorem ipsum commodo sed dolore proident ex Ut esse dolor pariatur cupidatat pariatur ea laboris officia esse culpa ullamco Excepteur ex non sint et commodo veniam et ea elit in ex pariatur pariatur incididunt aliquip non deserunt aliqua dolor dolore consectetur magna adipisicing in aliquip sunt dolore deserunt in irure dolore anim aliquip eu amet do in Excepteur sint anim voluptate eiusmod adipisicing Excepteur ullamco in Excepteur est commodo ea dolor voluptate sunt Duis ad Excepteur occaecat magna cillum sunt dolore elit nisi cupidatat adipisicing Duis nulla veniam aliqua sunt consequat laboris in irure nisi fugiat eu irure aliqua ad laboris magna eiusmod ullamco laborum adipisicing enim quis adipisicing laboris anim ea est esse laboris dolore ad pariatur ut non exercitation dolore sed eu minim esse deserunt consectetur dolor ad ut pariatur eiusmod nostrud proident minim ullamco minim sunt anim pariatur velit ex nulla anim non aliqua nisi in eiusmod commodo laboris sit non eiusmod labore irure consectetur ad do in ut officia dolor laborum tempor esse ea aliqua deserunt quis consequat minim esse proident et ullamco in nulla id nisi sint elit veniam sed et irure ex proident eiusmod non est ad anim do sed aliqua id mollit officia enim irure qui dolore commodo ex enim magna veniam sint ex tempor nostrud sunt in cupidatat cillum cupidatat consectetur eiusmod cupidatat aute dolor laborum irure sit culpa sed amet aliquip aliqua dolor. </p>
+		</section>
+
+		<section class="pages" id="page4">
+			<h1>Paralaxing </h1>
+			<p id='px1'>qui ex minim commodo pariatur. </p>
+			<p id='px2'>minim commodo pariatur Excepteur elit. </p>
+			<p id='px3'>exercitation qui ex minim comm Excepteur. </p>
+		</section>
+
+		
+
+		<section class="pages" id="page5">
+			<h1>Hello</h1>
+			<p>Incididunt commodo consectetur reprehenderit. </p>
+			<hr />
+		</section>
+
+
+		<section class="pages" id="page6">
+			<h1>i@Ali.MD ;)</h1>
+		</section>
+
+	</div>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.lettering-0.6.1.min.js"></script>
+	<script src="js/jquery.scrollorama.js"></script>
+	<script type="text/javascript">
+		var scrollorama = $.scrollorama({ blocks:'.pages' });
+
+		scrollorama.onBlockChange(function() {
+			var i = scrollorama.blockIndex;
+			console.log("blockIndex: "+i);
+		});
+
+		scrollorama.animate('.chert',{
+			duration:200,
+			property:'top',
+			start:window.innerHeight-150,
+			end:100
+		});
+
+		scrollorama.animate('#page1 h1',{
+			duration: 200,
+			property:'font-size',
+			end:50
+		});
+
+		scrollorama.animate('#page1 h1',{
+			duration: 500,
+			property:'top',
+			end:500
+		});
+
+		scrollorama.animate('#page2 h1',{
+			delay:300,
+			duration: 200,
+			property:'font-size',
+			start:10,
+			end:35
+		});
+
+		scrollorama.animate('#page3 p',{
+			duration: 400,
+			property:'padding-top',
+			start:400,
+			pin:true
+		});
+
+		scrollorama.animate('#page4 #px1',{
+			delay:600,
+			duration: 200,
+			property:'top',
+			start:0,
+			end:-100
+		});
+
+		scrollorama.animate('#page4 #px2',{
+			delay:500,
+			duration: 300,
+			property:'top',
+			start:0,
+			end:-200
+		});
+
+		scrollorama.animate('#page4 #px3',{
+			delay:400,
+			duration: 400,
+			property:'top',
+			start:50,
+			end:-250
+		});
+
+		scrollorama.animate('#page5 p',{
+			delay:500,
+			duration:500,
+			property: 'top',
+			end:400,
+			easing:'easeOutBounce'
+		});
+
+		scrollorama.animate('#page6 h1',{
+			delay:300,
+			duration:300,
+			property: 'top',
+			end:300
+		});
+
+	</script>
+</body>
+</html>
