@@ -9,10 +9,6 @@ Thumbs.db
 Desktop.ini
 $RECYCLE.BIN/
 
-#SublimeText
-*.sublime-project
-*.sublime-workspace
-
 #admin panel
 admin/
 
@@ -20,5 +16,6 @@ admin/
 backup/*_admin.sql
 *.psd
 
-#Cache temp dir
-cachetmp/
+#Cache temp
+/cachetmp/
+/style.css
