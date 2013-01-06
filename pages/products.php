@@ -13,26 +13,26 @@
 			<span class="prd-hover"><?php echo rand(10, 20); ?></span>
 		</div>
 		<div class="prd-4">
-			<span class="prd-hover"><?php echo rand(10, 20); ?></span>
+			<span class="prd-hover"><?php echo rand(10, 18); ?></span>
 		
 		<img src="images/prd/1.png" width="202" height="202" /></div>
 	</div>
 	<div class="col2">
 		<div class="prd-5">
 			<img src="images/prd/1.png" width="202" height="202" />
-			<span class="prd-hover"><?php echo rand(10, 20); ?></span>
+			<span class="prd-hover"><?php echo rand(10, 18); ?></span>
 		</div>
 		<div class="prd-6">
 			<img src="images/prd/1.png" width="202" height="202" />
-			<span class="prd-hover"><?php echo rand(10, 20); ?></span>
+			<span class="prd-hover"><?php echo rand(10, 18); ?></span>
 		</div>
 		<div class="prd-7">
 			<img src="images/prd/1.png" width="202" height="202" />
-			<span class="prd-hover"><?php echo rand(10, 20); ?></span>
+			<span class="prd-hover"><?php echo rand(10, 18); ?></span>
 		</div>
 		<div class="prd-8">
 			<img src="images/prd/1.png" width="202" height="202" />
-			<span class="prd-hover"><?php echo rand(10, 20); ?></span>
+			<span class="prd-hover"><?php echo rand(10, 18); ?></span>
 		</div>
 	</div>
 </section>
