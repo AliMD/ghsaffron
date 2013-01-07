@@ -1,6 +1,6 @@
 <section class="prd-container">
 	<div class="prd-title">Products</div>
-	<div class="col1 cover">
+	<div class="prds cover">
 		<div class="prd-1">
 			<img src="images/prd/1.png" width="120" height="100" />
 			<span class="prd-hover"><?php echo rand(10, 20); ?></span>
