@@ -1,5 +1,5 @@
 <div class="content_wrap contact-us">
-	<section class="form">
+	<section class="form cover">
 		<form id="contact-form" action="sendmail.php" method="post" target='ifrm'>
 			<div class="input-left left">
 				<input title="Name" type="text" name="name" id="name" placeholder='Name' />
@@ -11,6 +11,6 @@
 			<input title="Send" class="font btn_submit right" name="submit" id='btn_submit' type="submit" value="Send" />
 			<input title="Reset" class="font btn_submit right" name="reset" id='btn_submit' type="reset" value="Reset" />
 		</form>
+		<iframe id='ifrm' name='ifrm' src="" frameborder="0" scrolling="no"></iframe>
 	</section>
-	<iframe id='ifrm' name='ifrm' src="" frameborder="0" scrolling="no"></iframe>
 </div>
