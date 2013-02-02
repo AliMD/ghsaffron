@@ -24,8 +24,13 @@
 			<figure id="logo"></figure>
 		</section>
 
-		<section id="home" class="pages">
+		<section id="index" class="pages">
 			
+		</section>
+
+		<section id="home" class="pages">
+			<div class="saffron"></div>
+			<div class="saffron-img"></div>
 		</section>
 
 		<section id="aboutus" class="pages">
@@ -35,6 +40,14 @@
 		<section id="products" class="pages">
 			
 		</section>
+
+		<!--<section id="product1" class="pages">
+			
+		</section>
+
+		<section id="product2" class="pages">
+			
+		</section>-->
 
 		<section id="certificate" class="pages">
 			
@@ -49,6 +62,95 @@
 		</section>
 
 	</div>
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/jquery.lettering-0.6.1.min.js"></script>
+	<script src="js/jquery.scrollorama.js"></script>
+	<script type="text/javascript">
+	var scrollorama = $.scrollorama({ blocks:'.pages' });
 
+		scrollorama.onBlockChange(function() {
+			var i = scrollorama.blockIndex;
+			console.log("blockIndex: "+i);
+		});
+
+	/*	scrollorama.animate('#home',{
+			duration: 200,
+			property:'font-size',
+			end:50
+		});
+		
+*/
+
+	
+		scrollorama.animate('#logo',{
+			duration:200,
+			property:'top',
+			start:window.innerHeight-150,
+			end:100
+		});
+
+		scrollorama.animate('.saffron',{
+			delay:300,
+			duration: 500,
+			property:'top',
+			end:200
+		});
+/*
+		scrollorama.animate('#page2 h1',{
+			delay:300,
+			duration: 200,
+			property:'font-size',
+			start:10,
+			end:35
+		});
+
+		scrollorama.animate('#page3 p',{
+			duration: 400,
+			property:'padding-top',
+			start:400,
+			pin:true
+		});
+
+		scrollorama.animate('#page4 #px1',{
+			delay:600,
+			duration: 200,
+			property:'top',
+			start:0,
+			end:-100
+		});
+
+		scrollorama.animate('#page4 #px2',{
+			delay:500,
+			duration: 300,
+			property:'top',
+			start:0,
+			end:-200
+		});
+
+		scrollorama.animate('#page4 #px3',{
+			delay:400,
+			duration: 400,
+			property:'top',
+			start:50,
+			end:-250
+		});
+
+		scrollorama.animate('#page5 p',{
+			delay:500,
+			duration:500,
+			property: 'top',
+			end:400,
+			easing:'easeOutBounce'
+		});
+
+		scrollorama.animate('#page6 h1',{
+			delay:300,
+			duration:300,
+			property: 'top',
+			end:300
+		});
+		*/
+
+	</script>
 </body>
 </html>
