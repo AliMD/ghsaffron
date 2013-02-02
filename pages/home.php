@@ -128,10 +128,6 @@
 			</div>
 		</section>
 
-		<section id="branches" class="pages">
-			
-		</section>
-
 		<div class="contact-us pages">
 			<section class="form cover">
 				<form id="contact-form" action="sendmail.php" method="post" target='ifrm'>
