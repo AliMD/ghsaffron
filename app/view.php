@@ -5,7 +5,7 @@
 // view template
 console_log($template);
 
-inc('header');
+inc('header_fa');
 
 echo '<div class="container">';
 
