@@ -16,7 +16,7 @@
 		</div>
 	</div>
 	<div class="title cover">
-		<h2>Certificates</h2>
-		<p>Holding your phone, a couple of credit cards and banknotes - this protective case is all you need for a day in the city or a night out on the tiles. Measures 8.5cm x 12cm.</p>
+		<h2>مجوزها</h2>
+		<p>به گزارش خبرگزاری فارس به نقل از روزنامه «الحیات» منابع بلند پایه غربی نزدیک به سازمان ملل تأکید کردند طرح پیشنهادی جدید اخضر ابراهیمی فرستاده مشترک سازمان ملل و اتحادیه عرب برای حل بحران سوریه ارائه شده است.</p>
 	</div>
 </section>
