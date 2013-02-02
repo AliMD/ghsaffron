@@ -6,19 +6,22 @@
 					<a href="#">خانه</a>
 				</li>
 				<li class="item2">
-					<a href="#">محصولات</a>
+					<a href="#">درباره</a>
 				</li>
 				<li class="item3">
-					<a href="#">مجوز ها</a>
+					<a href="#">زعفران</a>
 				</li>
 				<li class="item4">
-					<a href="#">درباره ما</a>
+					<a href="#">محصولات</a>
 				</li>
 				<li class="item5">
-					<a href="#">برنچ ها</a>
+					<a href="#">مجوزها</a>
 				</li>
 				<li class="item6">
-					<a href="#">ارتباط با ما</a>
+					<a href="#">آزمایشگاه</a>
+				</li>
+				<li class="item7">
+					<a href="#">ارتباط</a>
 				</li>
 			</ul>
 		</nav>
