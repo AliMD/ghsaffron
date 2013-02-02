@@ -1,0 +1,70 @@
+
+/* Products section
+-------------------------------------------------- */
+
+section.prd-container
+	width 1000px
+	height 400px
+	margin 0 auto
+	padding-top 1px
+	outline 1px solid red
+
+	span.prd-hover
+		overflow hidden
+		display block
+		position absolute
+		top 0
+		left 0
+		right 0
+		bottom 0
+		color rgba(255,255,255,0.65)
+		opacity 0
+		z-index 2 
+		line-height 130px
+		font-size 70px
+		font-family 'Pacifico', cursive
+		text-align center	//chon italic e zamani ke right mishe mizane biroon
+		font-style italic
+		padding-left 5px
+		letter-spacing -5px
+		background-color black
+		border-radius 10px
+		transition all 800ms ease-out
+
+	div.prd-title
+		color #8a49b3
+		background-image url(images/line.png)
+		background-repeat no-repeat
+		background-position 720px 23px
+		margin 20px auto 0 auto
+		width inherit
+		height 20px
+		padding-left 248px
+		font-size 30px
+		min-height 40px
+		font-family nazanin
+
+	div.prd-shadow
+		background-image url(images/prd-shadow.png)
+		background-repeat no-repeat
+		margin 10px auto 0 auto
+		width 560px
+		height 28px
+
+	& > div.prds
+		margin 0 auto
+		width 530px
+
+		& > div
+			height 100px
+			width 120px
+			overflow hidden
+			float left
+			margin 10px 0 0 10px
+			border-radius 10px
+			cursor pointer
+			position relative	
+		
+			&:hover span
+				opacity: 0.65;
+				transition-duration: 500ms;

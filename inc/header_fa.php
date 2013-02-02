@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>		<html lang="en-US" dir="ltr" class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>			<html lang="en-US" dir="ltr" class="lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>			<html lang="en-US" dir="ltr" class="lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!-->	<html lang="en-US" dir="ltr" class="no-ie"> <!--<![endif]-->
+<!--[if lt IE 7]>		<html lang="fa-IR" dir="rtl" class="lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>			<html lang="fa-IR" dir="rtl" class="lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>			<html lang="fa-IR" dir="rtl" class="lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->	<html lang="fa-IR" dir="rtl" class="no-ie"> <!--<![endif]-->
 <head>
 	<meta charset="utf-8" />
 	<title><?php echo $template['title'] ?></title>
