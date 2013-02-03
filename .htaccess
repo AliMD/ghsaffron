@@ -234,17 +234,17 @@ FileETag None
 # This is not in use in the boilerplate as it stands. You may
 # choose to use this technique if you do not have a build process.
 
-<FilesMatch "\.combined\.js$">
-	Options +Includes
-	#AddOutputFilterByType INCLUDES application/javascript application/json
-	SetOutputFilter INCLUDES
-</FilesMatch>
+#<FilesMatch "\.combined\.js$">
+#	Options +Includes
+#	AddOutputFilterByType INCLUDES application/javascript application/json
+#	SetOutputFilter INCLUDES
+#</FilesMatch>
 
-<FilesMatch "\.combined\.css$">
-	Options +Includes
-	#AddOutputFilterByType INCLUDES text/css
-	SetOutputFilter INCLUDES
-</FilesMatch>
+#<FilesMatch "\.combined\.css$">
+#	Options +Includes
+#	AddOutputFilterByType INCLUDES text/css
+#	SetOutputFilter INCLUDES
+#</FilesMatch>
 
 # ----------------------------------------------------------------------
 # Search Engine Friendly URLs (SEF) for This website only.
