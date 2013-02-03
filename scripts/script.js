@@ -1,7 +1,8 @@
 (function($,undefined){
 	var scrollorama = $.scrollorama({
 		blocks : $('.pages'),
-		offset : -300
+		offset : -300,
+		enablePin : false
 	});
 
 	scrollorama.onBlockChange(function() {
