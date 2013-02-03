@@ -1,20 +1,44 @@
 (function($,undefined){
-	var scrollorama = $.scrollorama({
-		blocks : $('.pages'),
-		offset : -300,
-		enablePin : false
-	});
+	/*
+	var pages = $('.pages'),
+		scrollorama = $.scrollorama({
+			blocks : pages,
+			offset : -320,
+			enablePin : false
+		});
 
 	scrollorama.onBlockChange(function() {
 		var i = scrollorama.blockIndex;
+		pages.removeClass('active').eq(i).addClass('active');
 		console.log("blockIndex: "+i);
 	});
 
-	/*scrollorama.animate('.certificates-container h2',{
-		delay: 100, 
-		duration: 300, 
-		property:'opacity', 
+	scrollorama.animate($('#aboutus h1'),{
+		delay: 200, 
+		duration: 250, 
+		property:'left', 
+		start:-300,
+		end:0
+	});
+
+	scrollorama.animate($('#aboutus .spacer'),{
+		delay: 200,
+		duration: 250,
+		property:'height',
 		start:0,
-		end:1
-	});*/
+		end:200
+	});
+*/
+	var pages = $('.pages');
+	pages.prepend('<div class="spacer"></div>')
+
+	var	deck = new $.scrolldeck({
+			buttons: 'nav a',
+			slides: pages,
+			offset: -300
+		});
+
+
+	console.log(deck.controller)
+
 })(jQuery);
