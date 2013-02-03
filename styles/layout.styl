@@ -11,40 +11,48 @@ body
 	if !!backColor2 && backColor != backColor2 && backColor2!='backColor2'
 		background-color backColor2
 
-.backpage
-	width 1280px
+header
 	position fixed
+	width auto
+	height 300px
 	left 0
-	right 0
 	top 0
-	bottom 0
-	margin 0 auto 
-	z-index -100
-	background-color pageBackColor
-
-#pages-wrapper
-	width 980px
-	margin 0 auto
-
-	.pages
-		width inherit
-		height 400px
-		margin-bottom 600px
-		border 1px solid gray
+	right 0
+	z-index 100
 	
-		&#home
-			margin-top 250px
-
-#arcimage
 	background-image url('images/archeader.png');
 	background-position center top
 	background-repeat no-repeat 
-	position fixed
-	left 0
-	right 0
-	top 0 
-	height 300px
-	z-index 100
+
+nav
+	menu
+		li
+			color white
+			a
+				color inherit
+				text-decoration none
+				text-transform capitalize
+
+#pages-wrapper
+	width 1280px
+	height pagesHeight * 7
+	margin 0 auto
+	background-color pageBackColor 
+	
+	.pages
+		width inherit
+		height pagesHeight
+		border 1px dashed red
+		/*
+		left 0
+		right 0
+		margin 0 auto
+		*/
+		
+		&.active
+			border-style solid
+			
+		.spacer
+			height 220px
 
 
- 
