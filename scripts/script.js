@@ -1,4 +1,8 @@
 (function($,undefined){
+	setTimeout("$('header').removeClass('preload')",300);
+	setTimeout("$('#logo').removeClass('preload')",1000);
+	setTimeout("$('menu').removeClass('preload')",1400);
+
 	/*
 	var pages = $('.pages'),
 		scrollorama = $.scrollorama({
