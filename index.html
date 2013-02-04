@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en-US">
+<html lang="fa-IR">
 <head>
 	<meta charset="UTF-8" />
 	<title>Ghasem Saffron</title>
@@ -94,19 +94,38 @@
 		</section>
 
 		<section class="pages" id="product1-detail">
-			<div class="pics left">
+			<div class="pics left animate-build" data-build="1" data-animation="fly-in-left">
 				<div class="pic1"></div>
 				<div class="pic2"></div>
 				<div class="pic3"></div>
 			</div>
 			<div class="des">
-				<h2>محصولات</h2>
-				<p>به گزارش خبرگزاری فارس به نقل از روزنامه «الحیات» منابع بلند پایه غربی نزدیک به سازمان ملل تأکید کردند طرح پیشنهادی جدید اخضر ابراهیمی فرستاده مشترک سازمان ملل و اتحادیه عرب برای حل بحران سوریه ارائه شده است.</p>
+				<h2 class="animate-build" data-build="2" data-animation="1">محصولات</h2>
+				<p class="animate-build" data-build="3" data-animation="1">به گزارش خبرگزاری فارس به نقل از روزنامه «الحیات» منابع بلند پایه غربی نزدیک به سازمان ملل تأکید کردند طرح پیشنهادی جدید اخضر ابراهیمی فرستاده مشترک سازمان ملل و اتحادیه عرب برای حل بحران سوریه ارائه شده است.</p>
 			</div>
 		</section>
 
 		<section class="pages" id="certificates">
-			
+			<div class="cert-right cover animate-build" data-build="1" data-animation="fly-in-left">
+				<section class="background_holder">
+					<div class="cert_01"></div>
+					<div class="cert_02"></div>
+					<div class="cert_03"></div>
+					<div class="cert_04"></div>
+				</section>
+				<div class="cert-shadow-line-holder">
+					<section class="thumb_holder wx">
+						<div class="cert_tumb_01 left"></div>
+						<div class="cert_tumb_02 left"></div>
+						<div class="cert_tumb_03 left"></div>
+						<div class="cert_tumb_04 left"></div>
+					</section>
+				</div>
+			</div>
+			<div class="des cover">
+				<h2 class="animate-build" data-build="2" data-animation="1">مجوزها</h2>
+				<p class="animate-build" data-build="3" data-animation="1">به گزارش خبرگزاری فارس به نقل از روزنامه «الحیات» منابع بلند پایه غربی نزدیک به سازمان ملل تأکید کردند طرح پیشنهادی جدید اخضر ابراهیمی فرستاده مشترک سازمان ملل و اتحادیه عرب برای حل بحران سوریه ارائه شده است.</p>
+			</div>
 		</section>
 
 		<section class="pages" id="laboratory">
@@ -114,7 +133,20 @@
 		</section>
 
 		<section class="pages" id="contactus">
-			
+			<section class="form cover">
+				<form id="contact-form" action="sendmail.php" method="post" target='ifrm'>
+					<div class="inputs right">
+						<input title="Name" type="text" name="name" id="name" placeholder='نام' />
+						<input title="Email" type="text" name="mail" id="mail" placeholder='ایمیل' />
+						<input title="Tell" type="text" name="tell" id="tell" placeholder='تلفن' />
+						<input title="Subject" type="text" name="subject" id="subject" placeholder='موضوع' />
+					</div>
+						<textarea title="Massage" name="msg" id="msg" cols="45" rows="12" placeholder='متن پیام'></textarea>
+					<input title="Reset" class="font btn_submit left" name="reset" id='btn_submit' type="reset" value="پاک کردن" />
+					<input title="Send" class="font btn_submit left" name="submit" id='btn_submit' type="submit" value="ارسال" />
+				</form>
+				<iframe id='ifrm' name='ifrm' src="" frameborder="0" scrolling="no"></iframe>
+			</section>
 		</section>
 	</div>
 
