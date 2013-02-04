@@ -74,7 +74,7 @@
 				switch (anim.attr('data-animation')) {
 					case 'fly-in-left':
 						anim.parent().css('overflow','hidden');
-						scrolldeck.controller.animate(anim, { delay: (anim.attr('data-build')-1)*400, duration: 400, property:'left', start:-500, pin:true });
+						scrolldeck.controller.animate(anim, { delay: (anim.attr('data-build')-1)*400, duration: 400, property:'left', start:-800, pin:true });
 						break;
 					case 'fly-in-right':
 						anim.parent().css('overflow','hidden');
