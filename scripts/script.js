@@ -43,6 +43,6 @@
 		});
 
 
-	console.log(deck.controller)
+	//console.log(deck.controller)
 
 })(jQuery);
