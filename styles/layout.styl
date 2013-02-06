@@ -19,11 +19,11 @@ header
 	top 0
 	right 0
 	z-index 100
-	transition all 1s
+	//transition all 1s
 	  
-	background-image url('images/archeader.png');
-	background-position center top
-	background-repeat no-repeat 
+	//background-image url('images/archeader.png');
+	//background-position center top
+	//background-repeat no-repeat 
 
 //nav
 //	menu
@@ -35,14 +35,13 @@ header
 //				text-transform capitalize
 
 #pages-wrapper
-	width 1280px
+	width 980px
 	height 30710px //pagesHeight * 7
 	margin 0 auto
 	background-color pageBackColor 
 	
 	.pages
 		width 980px
-		padding 0 150px 
 		height pagesHeight
 		/*
 		left 0
@@ -75,3 +74,45 @@ div.page-link
 		text-decoration none
 		color gray
 		font-size 18px
+
+div.full-bg
+	height 825px
+	background-image url(images/backimg1.jpg)
+	background-repeat no-repeat
+	background-position center bottom
+
+div.arc-bg
+	height 175px
+	background-image url(images/archeader.png)
+	background-repeat no-repeat
+	background-position center top
+
+div.language
+	position fixed
+	top 300px
+	left 0
+	right 0
+	min-height 340px
+	width 580px
+	margin 0 auto
+
+	a
+		display block
+		width 70px
+		height 73px
+		float right
+		margin 0 25px 0 0
+		background-image url(images/icons/flages.png)
+		background-repeat no-repeat
+
+	#fa
+		background-position 0 0
+
+	#en
+		background-position -73px 0
+
+	#es
+		background-position -148px 0
+
+	#fr
+		background-position -227px 0
