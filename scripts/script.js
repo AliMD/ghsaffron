@@ -3,36 +3,6 @@
 	setTimeout("$('#logo').removeClass('preload')",1000);
 	setTimeout("$('menu').removeClass('preload')",1400);
 
-	/*
-	var pages = $('.pages'),
-		scrollorama = $.scrollorama({
-			blocks : pages,
-			offset : -320,
-			enablePin : false
-		});
-
-	scrollorama.onBlockChange(function() {
-		var i = scrollorama.blockIndex;
-		pages.removeClass('active').eq(i).addClass('active');
-		console.log("blockIndex: "+i);
-	});
-
-	scrollorama.animate($('#aboutus h1'),{
-		delay: 200, 
-		duration: 250, 
-		property:'left', 
-		start:-300,
-		end:0
-	});
-
-	scrollorama.animate($('#aboutus .spacer'),{
-		delay: 200,
-		duration: 250,
-		property:'height',
-		start:0,
-		end:200
-	});
-*/
 	var pages = $('.pages');
 	pages.prepend('<div class="spacer"></div>')
 
@@ -42,7 +12,18 @@
 			offset: -300
 		});
 
+	$('div.language a').click(function(){
+		$('div.language').animate({'bottom':'-200px'},100,function(){
+			$(this).css({'display':'none'})
+		});
+		$('div.full-bg').animate({'height':'190px'});
+		//$('#logo').css({'display':'block'}).animate({'opacity':'0.95'});
 
+		setTimeout("$('#logo').css({'display':'block'}).animate({'opacity':'0.95'})",300);
+		setTimeout("$('nav menu').animate({'top':'17px'})",400);
+
+		
+	});
 	//console.log(deck.controller)
 
 })(jQuery);
