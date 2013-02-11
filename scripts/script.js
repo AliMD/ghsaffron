@@ -17,13 +17,21 @@
 			$(this).css({'display':'none'})
 		});
 		$('div.full-bg').animate({'height':'190px'});
-		//$('#logo').css({'display':'block'}).animate({'opacity':'0.95'});
-
 		setTimeout("$('#logo').css({'display':'block'}).animate({'opacity':'0.95'})",300);
 		setTimeout("$('nav menu').animate({'top':'17px'})",400);
-
-		
 	});
-	//console.log(deck.controller)
+
+	$("a[href='#home']").click(function(){
+		$('nav menu').animate({'top':'-117px'});
+		setTimeout(function(){
+			$('#logo').animate({'opacity':'0'},400,function(){
+				$(this).css({'display':'none'})
+			})
+		},100);
+		setTimeout("$('div.full-bg').animate({'height':'825px'})",200);
+		setTimeout(function(){
+			$('div.language').css({'display':'block'}).animate({'bottom':'200px'});
+		},400);
+	});
 
 })(jQuery);
