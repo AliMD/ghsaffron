@@ -19,30 +19,30 @@ header
 	top 0
 	right 0
 	z-index 100
-	
-	background-image url('images/archeader.png');
-	background-position center top
-	background-repeat no-repeat 
+	//transition all 1s
+	  
+	//background-image url('images/archeader.png');
+	//background-position center top
+	//background-repeat no-repeat 
 
-nav
-	menu
-		li
-			color white
-			a
-				color inherit
-				text-decoration none
-				text-transform capitalize
+//nav
+//	menu
+//		li
+//			color white
+//			a
+//				color inherit
+//				text-decoration none
+//				text-transform capitalize
 
 #pages-wrapper
-	width 1280px
-	height pagesHeight * 7
+	width 980px
+	height 30710px //pagesHeight * 7
 	margin 0 auto
 	background-color pageBackColor 
 	
 	.pages
-		width inherit
+		width 980px
 		height pagesHeight
-		border 1px dashed red
 		/*
 		left 0
 		right 0
@@ -53,6 +53,66 @@ nav
 			border-style solid
 			
 		.spacer
-			height 220px
+			height 275px
 
+div.page-link
+	width 122px
+	height 58px
+	background-image url(images/page-link.png)
+	position absolute
+	bottom 5px
+	left 0px
+	right 0px
+	margin 0 auto
 
+	& a
+		display block
+		height inherit
+		line-height 43px
+		padding 0 5px
+		text-align center
+		text-decoration none
+		color gray
+		font-size 18px
+
+div.full-bg
+	height 825px
+	background-image url(images/backimg1.jpg)
+	background-repeat no-repeat
+	background-position center bottom
+
+div.arc-bg
+	height 175px
+	background-image url(images/archeader.png)
+	background-repeat no-repeat
+	background-position center top
+
+div.language
+	position fixed
+	top 300px
+	left 0
+	right 0
+	min-height 340px
+	width 580px
+	margin 0 auto
+
+	a
+		display block
+		width 70px
+		height 73px
+		float right
+		margin 0 25px 0 0
+		background-image url(images/icons/flages.png)
+		background-repeat no-repeat
+
+	#fa
+		background-position 0 0
+
+	#en
+		background-position -73px 0
+
+	#es
+		background-position -148px 0
+
+	#fr
+		background-position -227px 0
