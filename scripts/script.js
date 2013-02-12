@@ -16,18 +16,18 @@
 		"#home" : 0,
 		"#aboutus" : 1800,
 		"#aboutsaffron" : 4585,
-		"#products" : 7485,
-		"#product1-detail" : 10785,
-		"#product2-detail" : 13685,
-		"#product3-detail" : 16485,
-		"#product4-detail" : 19185,
-		"#product5-detail" : 21785,
-		"#product6-detail" : 24585,
-		"#product7-detail" : 27285,
-		"#product8-detail" : 30085,
-		"#certificates" : 32850,
-		"#laboratory" : 35750,
-		"#contactus" : 39450
+		"#products" : 10285,
+		"#product1-detail" : 13585,
+		"#product2-detail" : 16485,
+		"#product3-detail" : 19285,
+		"#product4-detail" : 22085,
+		"#product5-detail" : 24885,
+		"#product6-detail" : 27685,
+		"#product7-detail" : 30185,
+		"#product8-detail" : 32985,
+		"#certificates" : 35785,
+		"#laboratory" : 38585,
+		"#contactus" : 42195
 	}
 
 	var scrollTopage = function(linkTo){
@@ -70,6 +70,6 @@
 	});
 
 	//controller.addTween('#aboutImg', TweenMax.from( $('#aboutImg'), .25, {css:{opacity:0, rotation: 720}, ease:Quad.easeOut}));
-	scrollorama.animate('#aboutImg',{ delay: 0, duration: 600, property:'left', start:400, end:1220 });
+	//scrollorama.animate('#aboutImg',{ delay: 0, duration: 600, property:'left', start:400, end:1220 });
 
 })(jQuery);
