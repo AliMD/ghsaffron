@@ -63,8 +63,11 @@
 		},100);
 		setTimeout("$('div.full-bg').animate({'height':'825px'})",200);
 		setTimeout(function(){
-			$('div.language').css({'display':'block'}).animate({'bottom':'200px'});
+			$('div.language').css({'display':'block'}).animate({'bottom':'100px'});
 		},400);
 	});
+
+	//controller.addTween('#aboutImg', TweenMax.from( $('#aboutImg'), .25, {css:{opacity:0, rotation: 720}, ease:Quad.easeOut}));
+	scrollorama.animate('#aboutImg',{ delay: 0, duration: 600, property:'left', start:400, end:1220 });
 
 })(jQuery);
