@@ -52,6 +52,7 @@
 		setTimeout("$('#logo').css({'display':'block'}).animate({'opacity':'0.95'})",300);
 		setTimeout("$('nav menu').animate({'top':'17px'})",400);
 		setTimeout("$.scrollTo(1800,200,'ease-in-out')",500);
+		return false;
 	});
 
 	$("a[href='#home']").click(function(){
@@ -65,6 +66,7 @@
 		setTimeout(function(){
 			$('div.language').css({'display':'block'}).animate({'bottom':'100px'});
 		},400);
+		return false;
 	});
 
 	//controller.addTween('#aboutImg', TweenMax.from( $('#aboutImg'), .25, {css:{opacity:0, rotation: 720}, ease:Quad.easeOut}));
