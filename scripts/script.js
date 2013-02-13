@@ -27,7 +27,7 @@
 		"#product8-detail" : 32985,
 		"#certificates" : 35785,
 		"#laboratory" : 38585,
-		"#contactus" : 42195
+		"#contactus" : 42495
 	}
 
 	var scrollTopage = function(linkTo){
