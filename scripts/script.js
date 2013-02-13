@@ -34,20 +34,23 @@
 		$.scrollTo( menu[linkTo], 800, 'ease-in-out');
 	}
 
-	$("nav menu a").click(function(){
+	$("nav menu a,div.page-link > a,div.prds a").click(function(){
 		scrollTopage($(this).attr("href"));
 		return false;
 	});
 
+	/*$("nav menu a").click(function(){
+		scrollTopage($(this).attr("href"));
+		return false;
+	});
 	$("div.page-link > a").click(function(){
 		scrollTopage($(this).attr("href"));
 		return false;
 	});
-
 	$("div.prds a").click(function(){
 		scrollTopage($(this).attr("href"));
 		return false;
-	});
+	});*/
 
 	$('div.language a').click(function(){
 		$('div.language').animate({'bottom':'-200px'},100,function(){
