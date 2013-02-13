@@ -1,7 +1,8 @@
 
 /* About section
 -------------------------------------------------- */
-section#aboutus
+// right layout Lang
+.rtlLang section#aboutus
 	margin 0 auto 50px auto 
 	width 1000px
 	height 400px
@@ -24,6 +25,36 @@ section#aboutus
 		& h2
 			font-size 32px
 			font-weight bold
+			color #8A49B3 
+
+		& p
+			font-size 20px 
+
+// left layout Lang
+.ltrLang section#aboutus
+	margin 0 auto 50px auto 
+	width 1000px
+	height 400px
+	margin 0 auto
+
+	& div.about-img
+		width 600px
+		height 400px
+		float right
+		background-image url('images/home.png')
+		background-repeat no-repeat
+		background-position left center
+
+	& div.des 
+		margin-right 600px
+		height inherit
+		text-align justify
+		padding 0 32px 0 0
+		
+		& h2
+			font-size 32px
+			font-weight bold
+			text-transform capitalize
 			color #8A49B3 
 
 		& p
