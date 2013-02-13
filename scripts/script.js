@@ -44,6 +44,11 @@
 		return false;
 	});
 
+	$("div.prds a").click(function(){
+		scrollTopage($(this).attr("href"));
+		return false;
+	});
+
 	$('div.language a').click(function(){
 		$('div.language').animate({'bottom':'-200px'},100,function(){
 			$(this).css({'display':'none'})
