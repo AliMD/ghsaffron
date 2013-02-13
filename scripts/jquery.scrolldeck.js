@@ -78,7 +78,7 @@
 						break;
 					case 'fly-in-right':
 						anim.parent().css('overflow','hidden');
-						scrolldeck.controller.animate(anim, { delay: (anim.attr('data-build')-1)*400, duration: 400, property:'right', start:-1300, pin:true });
+						scrolldeck.controller.animate(anim, { delay: (anim.attr('data-build')-1)*400, duration: 400, property:'right', start:-900, pin:true });
 						break;
 					case 'space-in':
 						scrolldeck.controller.animate(anim, { delay: (anim.attr('data-build')-1)*400, duration: 400, property:'letter-spacing', start:40, pin:true });
