@@ -63,21 +63,7 @@ function endPanel(){
 		return false;
 	});
 
-	/*$("nav menu a").click(function(){
-		scrollTopage($(this).attr("href"));
-		return false;
-	});
-	$("div.page-link > a").click(function(){
-		scrollTopage($(this).attr("href"));
-		return false;
-	});
-	$("div.prds a").click(function(){
-		scrollTopage($(this).attr("href"));
-		return false;
-	});*/
-
-
-	$('div.language a').click(function(){
+	$('div.language a.active').click(function(){
 		startPanel();
 		return false;
 	});
