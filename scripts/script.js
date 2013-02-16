@@ -16,33 +16,41 @@
 		"#home" : 0,
 		"#aboutus" : 1800,
 		"#aboutsaffron" : 4585,
-		"#products" : 10285,
-		"#product1-detail" : 13585,
+		"#products" : 10485,
+		"#product1-detail" : 13885,
 		"#product2-detail" : 16485,
 		"#product3-detail" : 19285,
 		"#product4-detail" : 22085,
 		"#product5-detail" : 24885,
 		"#product6-detail" : 27685,
-		"#product7-detail" : 30185,
-		"#product8-detail" : 32985,
+		"#product7-detail" : 30285,
+		"#product8-detail" : 33085,
 		"#certificates" : 35785,
 		"#laboratory" : 38585,
-		"#contactus" : 42195
+		"#contactus" : 42495
 	}
 
 	var scrollTopage = function(linkTo){
 		$.scrollTo( menu[linkTo], 800, 'ease-in-out');
 	}
 
-	$("nav menu a").click(function(){
+	$("nav menu a,div.page-link > a,div.prds a").click(function(){
 		scrollTopage($(this).attr("href"));
 		return false;
 	});
 
+	/*$("nav menu a").click(function(){
+		scrollTopage($(this).attr("href"));
+		return false;
+	});
 	$("div.page-link > a").click(function(){
 		scrollTopage($(this).attr("href"));
 		return false;
 	});
+	$("div.prds a").click(function(){
+		scrollTopage($(this).attr("href"));
+		return false;
+	});*/
 
 	$('div.language a').click(function(){
 		$('div.language').animate({'bottom':'-200px'},100,function(){
