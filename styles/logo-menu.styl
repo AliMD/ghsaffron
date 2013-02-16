@@ -9,7 +9,7 @@ section.banner
 	left 0
 	right 0
 	z-index 50
- // right layout Lang
+
 .rtlLang nav menu 
 	background-image url('images/menu-bg.png')
 	background-repeat no-repeat
@@ -105,10 +105,10 @@ section.banner
 
 @keyframes logoAnim {
 	0% {
-		-webkit-transform rotateY(0deg)
+		transform rotateY(0deg)
 	}
 	100% {
-		-webkit-transform rotateY(360deg)
+		transform rotateY(360deg)
 	}
 }
 
@@ -122,14 +122,17 @@ figure#logo
 	height 181px
 	opacity 0
 	display none
-	-webkit-perspective 800
+	perspective 400
+	perspective-origin center bottom
 	
 	& div
 		width inherit
 		height inherit
 		background-image  url(images/logo.png)
-		//animation logoAnim 5s ease-in-out 3s infinite alternate none
-		-webkit-animation logoAnim 5s ease-in-out 3s infinite alternate none
-		-moz-animation logoAnim 5s ease-in-out 3s infinite alternate none
-		-o-animation logoAnim 5s ease-in-out 3s infinite alternate none
-		-ms-animation logoAnim 5s ease-in-out 3s infinite alternate none
+		animation-name logoAnim
+		animation-delay 3s
+		animation-duration 5s
+		animation-direction normal
+		animation-iteration-count infinite
+		animation-timing-function ease-in-out
+		animation-fill-mode backwards
