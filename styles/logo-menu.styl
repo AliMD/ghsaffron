@@ -8,62 +8,128 @@ section.banner
 	top 0
 	left 0
 	right 0
-	z-index 20
- 
-nav ul 
-	background-image url('../images/menu-bg.png')
+	z-index 50
+ // right layout Lang
+.rtlLang nav menu 
+	background-image url('images/menu-bg.png')
 	background-repeat no-repeat
 	width 681px
 	height 133px
-	margin 40px auto 0
+	position absolute
+	top -117px
+	left 0
+	right 0
+	margin 0 auto
+	//transition  all 2s
 
-nav li 
-	float left
-	margin-top 40px
+	li 
+		float right
 
-nav li.item1 
-	margin-left 65px
-	margin-top 52px
-	-webkit-transform rotate(-6deg)
-nav li.item2 
-	margin-top 46px
-	-webkit-transform rotate(-4deg)
-nav li.item3 
-	margin-top 42px
-	-webkit-transform rotate(-1deg)
-nav li.item4 
-	margin-top 41px
-	-webkit-transform rotate(1deg)
-nav li.item5 
-	margin-top 45px
-	-webkit-transform rotate(4deg)
-nav li.item6 
-	margin-top 53px
-	-webkit-transform rotate(6deg)
+		a 
+			display		block
+			text-transform	 uppercase
+			text-decoration	 none
+			color			 #6E1312
+			padding		5px 15px 6px
+			font-family		 nazanin
+			font-size		 20px
 
-nav li a 
-	display			 block
-	text-transform	 uppercase
-	text-decoration	 none
-	color			 #6E1312
-	padding			 5px 7px 6px
-	font-family		 "Courier New", Courier, monospace
-	font-size		 14px
-	font-weight bold
+	li:hover a 
+		color red
 
-nav li:hover a 
-	color red
+	li.item1 
+		margin-right 120px
+		margin-top 49px
+	li.item2 
+		margin-top 43px
+	li.item3 
+		margin-top 36px
+	li.item4 
+		margin-top 33px
+	li.item5 
+		margin-top 36px
+	li.item6 
+		margin-top 43px
+	li.item7 
+		margin-top 49px
 
-figure#logo
-	border: 1px solid red;
-	background-image: url(images/logo.png);
-	position: absolute;
-	top: 88px;
-	left: 0;
-	right: 0;
-	margin: 0 auto;
-	width: 201px;
-	height: 181px;
-	opacity: .95;
-	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
-	filter: alpha(opacity=95);
+
+// left layout Lang
+.ltrLang nav menu 
+	background-image url('images/menu-bg.png')
+	background-repeat no-repeat
+	width 681px
+	height 133px
+	position fixed
+	top -117px
+	left 0
+	right 0
+	margin 0 auto
+	//transition  all 2s
+
+	li 
+		float left
+
+		a 
+			display		block
+			text-transform	 capitalize
+			text-decoration	 none
+			color			 #6E1312
+			padding		 9px 10px 6px
+			font-weight		 bold
+			font-size		 14px
+
+	li:hover a 
+		color red
+
+	li.item1 
+		margin-left 30px
+		margin-top 49px
+	li.item2 
+		margin-top 43px
+	li.item3 
+		margin-top 36px
+	li.item4 
+		margin-top 33px
+	li.item5 
+		margin-top 36px
+	li.item6 
+		margin-top 43px
+	li.item7 
+		margin-top 49px
+
+.ltrLang.fr nav menu  li a
+	padding 9px 7px 6px
+.ltrLang.es nav menu  li a
+	padding 9px 9px 6px
+
+@keyframes logoAnim {
+	0% {
+		-webkit-transform rotateY(0deg)
+	}
+	100% {
+		-webkit-transform rotateY(360deg)
+	}
+}
+
+figure#logo 
+	position absolute
+	top 118px
+	left 0
+	right 0
+	margin 0 auto
+	width 201px
+	height 181px
+	opacity 0
+	display none
+	-webkit-perspective 800
+	
+	& div
+		width inherit
+		height inherit
+		background-image  url(images/logo.png)
+		//animation logoAnim 5s ease-in-out 3s infinite alternate none
+		-webkit-animation logoAnim 5s ease-in-out 3s infinite alternate none
+		-moz-animation logoAnim 5s ease-in-out 3s infinite alternate none
+		-o-animation logoAnim 5s ease-in-out 3s infinite alternate none
+		-ms-animation logoAnim 5s ease-in-out 3s infinite alternate none
