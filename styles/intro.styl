@@ -1,27 +1,23 @@
 
 /* Intro section
 -------------------------------------------------- */
-body.intro-page
-	background-image url(images/backimg1.jpg)
-	background-position top center 
-	background-repeat no-repeat
-
 .logo-intro
-	width 201px
-	height 181px
-	background-image url(images/logo.png)
-	background-repeat no-repeat
+	width 300px
+	height 291px
 	position absolute
 	bottom 180px
 	left 0
 	right 0
 	margin 0 auto
+	transition all 700ms
 
+	img
+		display block
 
 
 div.language
 	position fixed
-	bottom 50px
+	bottom 100px
 	left 0
 	right 0
 	min-height 360px
@@ -40,17 +36,39 @@ div.language
 			display block
 			width 50px
 			float right
-			margin 0 25px 0 0
+			margin 0 33px 0 0
 			text-decoration none
 			color white
 			text-align center
 			font-size 15px
 
 			&#fr
-				margin-right auto
+				//margin-right auto
 
 			img
 				margin-bottom 2px
 				display block
 				width 50px
 				height 50px
+
+div.loading
+	position fixed
+	top 0
+	left 0
+	bottom 0
+	right 0
+	background-color #871716
+	z-index 100000
+
+.rotate
+	perspective 400
+	perspective-origin center bottom
+	
+	& img
+		display block
+		animation-name logoAnim
+		animation-duration 5s
+		animation-direction normal
+		animation-iteration-count infinite
+		animation-timing-function ease-in-out
+		animation-fill-mode backwards

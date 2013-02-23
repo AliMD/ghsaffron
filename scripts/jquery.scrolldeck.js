@@ -91,6 +91,28 @@
 						scrolldeck.controller.animate(anim, { delay: (anim.attr('data-build')-1)*400, duration: 400, property:'top', start:300, pin:true });
 						scrolldeck.controller.animate(anim, { delay: (anim.attr('data-build')-1)*400, duration: 400, property:'opacity', start:0, pin:true });
 						break;
+					case 'fly-in-rotate':
+						scrolldeck.controller.animate(anim, { delay: (anim.attr('data-build')-1)*400, duration: 400, property:'top', start:300, pin:true });
+						scrolldeck.controller.animate(anim, { delay: (anim.attr('data-build')-1)*400, duration: 400, property:'opacity', start:0, pin:true });
+						scrolldeck.controller.animate(anim, { delay: (anim.attr('data-build')-1)*400, duration: 300, property:'scale', start:0.1, pin:true });
+						scrolldeck.controller.animate(anim, { delay: (anim.attr('data-build')-1)*400, duration: 400, property:'rotate', start:100, pin:true });
+						break;
+					case 'fly-in-scale':
+						scrolldeck.controller.animate(anim, { delay: (anim.attr('data-build')-1)*400, duration: 300, property:'top', start:300, pin:true });
+						scrolldeck.controller.animate(anim, { delay: (anim.attr('data-build')-1)*400, duration: 300, property:'opacity', start:0, pin:true });
+						scrolldeck.controller.animate(anim, { delay: (anim.attr('data-build')-1)*400, duration: 300, property:'scale', start:0.1, pin:true });
+						break;
+					case 'fly-in-left-pic2':
+						scrolldeck.controller.animate(anim, { delay: (anim.attr('data-build')-1)*400, duration: 400, property:'left', start:-800,end:108, pin:true });
+						break;
+					case 'fly-in-left-bot':
+						scrolldeck.controller.animate(anim, { delay: ((anim.attr('data-build')-1)*400), duration: 1000, property:'left', start:-2800,end:0, pin:true });
+						scrolldeck.controller.animate(anim, { delay: ((anim.attr('data-build')-1)*400)+3600, duration: 1700, property:'top', start:0, end:50, pin:true });
+						break;
+					//case 'fly-in-wait':
+						//scrolldeck.controller.animate(anim, { delay: ((anim.attr('data-build')-1)*400), duration: 3000, property:'opacity', start:0, pin:true });
+						//scrolldeck.controller.animate(anim, { delay: ((anim.attr('data-build')-1)*400)+1000, duration: 1700, property:'top', start:0, end:50, pin:true });
+						//break;
 					default:
 						scrolldeck.controller.animate(anim, { delay: (anim.attr('data-build')-1)*400, duration: 400, property:'opacity', start:0, pin:true });
 				}
