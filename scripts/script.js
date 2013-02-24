@@ -55,7 +55,7 @@ function endPanel(){
 	}
 
 	var scrollTopage = function(linkTo){
-		$.scrollTo( menu[linkTo], 800, 'ease-in-out');
+		$.scrollTo( menu[linkTo], 2000, 'ease-in-out');
 	}
 
 	$("nav menu a,div.page-link > a,div.prds a").click(function(){
