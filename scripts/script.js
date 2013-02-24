@@ -71,8 +71,12 @@ function endPanel(){
 	var slides = $("div.case-train div.train > div"),
 		currentslide = 0;
 	slider = function(n){
-		if(n>=slides.length) n=0;
-		if(n<0) n=(slides.length-1);
+		if(n>=slides.length || n==0) { 
+			n=0; 
+			$('div.prev').addClass('arrowhide');
+		}
+		if(n>0) $('div.prev').removeClass('arrowhide');
+		if(n<0) return false;
 		$("div.case-train div.train").animate({
 			'left': -(n*980) + 'px'
 		},300);
