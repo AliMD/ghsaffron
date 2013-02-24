@@ -41,25 +41,19 @@ function endPanel(){
 		"#aboutus" : 1800,
 		"#aboutsaffron" : 4585,
 		"#products" : 10485,
-		"#product1-detail" : 13885,
-		"#product2-detail" : 16485,
-		"#product3-detail" : 19285,
-		"#product4-detail" : 22085,
-		"#product5-detail" : 24885,
-		"#product6-detail" : 27685,
-		"#product7-detail" : 30285,
-		"#product8-detail" : 33085,
-		"#certificates" : 35785,
-		"#laboratory" : 38585,
-		"#contactus" : 42495
+		"#certificates" : 13885,
+		"#laboratory" : 16485,
+		"#contactus" : 19985
 	}
 
 	var scrollTopage = function(linkTo){
 		$.scrollTo( menu[linkTo], 800, 'ease-in-out');
 	}
 
-	$("nav menu a,div.page-link > a,div.prds a").click(function(){
-		scrollTopage($(this).attr("href"));
+	$("nav menu a,div.page-link > a").click(function(){
+		var link = $(this).attr("href");
+		scrollTopage(link);
+		slider(0);
 		return false;
 	});
 
@@ -72,6 +66,30 @@ function endPanel(){
 		endPanel();
 		return false;
 	});
+
+	// product slider
+	var slides = $("div.case-train div.train > div"),
+		currentslide = 0;
+	slider = function(n){
+		if(n>=slides.length) n=0;
+		if(n<0) n=(slides.length-1);
+		$("div.case-train div.train").animate({
+			'left': -(n*980) + 'px'
+		},300);
+		currentslide = n;
+	}
+	$("div.prds a").click(function(){
+		var  indx = $(this).parent().index();
+		slider(indx+1);
+		return false;
+	});
+	$("div.next").click(function(){
+		slider(currentslide+1);
+	});
+	$("div.prev").click(function(){
+		slider(currentslide-1);
+	});
+	// product slider
 
 	//controller.addTween('#aboutImg', TweenMax.from( $('#aboutImg'), .25, {css:{opacity:0, rotation: 720}, ease:Quad.easeOut}));
 	//scrollorama.animate('#aboutImg',{ delay: 0, duration: 600, property:'left', start:400, end:1220 });
