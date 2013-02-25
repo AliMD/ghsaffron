@@ -1,6 +1,3 @@
-
-
-
 (function($,undefined){
 	//setTimeout("$('header').removeClass('preload')",300);
 	//setTimeout("$('#logo').removeClass('preload')",1000);
@@ -41,9 +38,9 @@
 	pages.prepend('<div class="spacer"></div>');
 
 	var	deck = new $.scrolldeck({
-			buttons: null,
-			slides: pages
-		});
+		buttons: null,
+		slides: pages
+	});
 
 
 	var scrollTopage = function(linkTo){
@@ -55,14 +52,46 @@
 		return false;
 	});
 
-	updateScrollPos = function(){
-		for(var i in menu){
-			$.scrollTo(document.height,1);
-			$.scrollTo(i,1);
-			menu[i] = window.scrollY;
-		}
-		console.log(JSON.stringify(menu));
+	sleep = function(n){
+		for(var i=Date.now(); Date.now()-i<n; );
 	};
+
+	setTimeout(updateScrollPos = function(){
+		var reverseMenu = [];
+		for(var i in menu){
+			reverseMenu.push(i);
+			menu[i]=-1;
+		}
+		reverseMenu.reverse();
+		i=0;
+		$.scrollTo(document.height,10);
+		setTimeout(updateNextScrollPos=function(){
+			$.scrollTo(reverseMenu[i],10);
+			setTimeout(function(){
+				menu[reverseMenu[i]]= window.scrollY;
+				i++;
+				if(i<reverseMenu.length){
+					updateNextScrollPos();
+				}else{
+					console.log(JSON.stringify(menu));
+				}
+			},100);
+		},100)
+/*
+			;(function(i){
+				$.scrollTo(document.height,10);
+				setTimeout(function(){
+					$.scrollTo(i,10);
+				 	setTimeout(function(){
+				 		menu[i] = window.scrollY;
+						console.log(JSON.stringify(menu));
+				 	},100)
+				 },100);
+			})(i);
+			sleep(250);
+		}
+		*/
+	},500);
 
 	$('div.language a.active').click(function(){
 		startPanel();
