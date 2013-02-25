@@ -1,9 +1,17 @@
 function startPanel(){
-	$('div.language').animate({'bottom':'-200px'},100,function(){
-		$(this).css({'display':'none'})
-	});
-	$('div.full-bg').animate({'height':'190px'});
-	setTimeout("$('#logo').css({'display':'block'}).animate({'opacity':'0.95'})",300);
+	$('div.full-bg').animate({'height':'425px'},300);
+	setTimeout(function(){
+		$('section.flags').animate({'opacity':'0'},200,function(){
+			$(this).css({'display':'none'});
+		});
+	},100);
+	setTimeout("$('div.full-bg').animate({'height':'190'})",300);
+	setTimeout("$('.language').animate({'top':'80'})",300);
+	setTimeout(function(){
+		$(".logo-intro").css({
+			'-webkit-transform': 'scale(0.7)'
+		}).addClass("rotate");
+	},300)
 	setTimeout("$('nav menu').animate({'top':'17px'})",400);
 	setTimeout("$.scrollTo(1800,200,'ease-in-out')",500);
 }
@@ -11,14 +19,18 @@ function startPanel(){
 function endPanel(){
 	$('nav menu').animate({'top':'-117px'});
 	setTimeout(function(){
-		$('#logo').animate({'opacity':'0'},400,function(){
-			$(this).css({'display':'none'});
-		});
-	},100);
-	setTimeout("$('div.full-bg').animate({'height':'825px'})",200);
+		$(".logo-intro").css({
+			'-webkit-transform': 'scale(1)'
+		}).removeClass("rotate");
+	},200)
 	setTimeout(function(){
-		$('div.language').css({'display':'block'}).animate({'bottom':'100px'});
-	},400);
+		$('.language').animate({'top':(window.innerHeight-450)+'px'});
+	},200);
+	setTimeout("$('div.full-bg').animate({'height':'425'})",200);
+	setTimeout("$('div.full-bg').animate({'height':'825px'},300)",400);
+	setTimeout(function(){
+		$('section.flags').css({'display':'block'}).animate({'opacity':'1'},300);
+	},900);
 }
 
 
@@ -26,6 +38,10 @@ function endPanel(){
 	//setTimeout("$('header').removeClass('preload')",300);
 	//setTimeout("$('#logo').removeClass('preload')",1000);
 	//setTimeout("$('menu').removeClass('preload')",1400);
+
+	$("div.language").css({
+		'top':(window.innerHeight-450)+'px'
+	});
 
 	var pages = $('.pages');
 	pages.prepend('<div class="spacer"></div>');
@@ -43,7 +59,7 @@ function endPanel(){
 		"#products" : 10485,
 		"#certificates" : 13885,
 		"#laboratory" : 16485,
-		"#contactus" : 19985
+		"#contactus" : 20525
 	}
 
 	var scrollTopage = function(linkTo){
@@ -71,12 +87,12 @@ function endPanel(){
 	var slides = $("div.case-train div.train > div"),
 		currentslide = 0;
 	slider = function(n){
-		if(n>=slides.length || n==0) { 
+		if(n>slides.length-1 || n==0) { 
 			n=0; 
 			$('div.prev').addClass('arrowhide');
 		}
 		if(n>0) $('div.prev').removeClass('arrowhide');
-		if(n<0) return false;
+		if(n<0 || n==currentslide) return false;
 		$("div.case-train div.train").animate({
 			'left': -(n*980) + 'px'
 		},300);
