@@ -5,6 +5,24 @@
 
 	var menu = {"#home":0,"#aboutus":400,"#aboutsaffron":1300,"#products":2580,"#product1-detail":3491,"#product2-detail":4256,"#product3-detail":5021,"#product4-detail":5786,"#product5-detail":6551,"#product6-detail":7316,"#product7-detail":8081,"#product8-detail":8846,"#certificates":9611,"#laboratory":10376,"#contactus":11091}
 
+	var currentMenu = "#aboutus";
+	var nextMenu = function(c) { //return the next menu from c
+		var flag = false;
+		for(var i in menu) {
+			if(flag) break;
+			if(i===c) flag = true;
+		}
+		return i;
+	};
+	var previousMenu = function(c) { //return the previous menu from c
+		var prev = "";
+		for(var i in menu) {
+			if(i===c) break;
+			prev = i;
+		}
+		return prev;
+	};
+
 	var startPanel = function (){
 		$('div.language').animate({'bottom':'-200px'},100,function(){
 			$(this).css({'display':'none'})
@@ -19,7 +37,7 @@
 		setTimeout(function(){
 			$.scrollTo(menu['#aboutus'],200,'ease-in-out');
 		},500);
-	}
+	};
 
 	var endPanel = function (){
 		$('nav menu').animate({'top':'-117px'});
@@ -32,7 +50,7 @@
 		setTimeout(function(){
 			$('div.language').css({'display':'block'}).animate({'bottom':'100px'});
 		},400);
-	}
+	};
 
 	var pages = $('.pages');
 	pages.prepend('<div class="spacer"></div>');
@@ -45,6 +63,7 @@
 
 	var scrollTopage = function(linkTo){
 		$.scrollTo( menu[linkTo], 2000, 'ease-in-out');
+		currentMenu = linkTo;
 	}
 	
 	$("nav menu a,div.page-link > a,div.prds a").click(function(){
@@ -76,21 +95,7 @@
 					console.log(JSON.stringify(menu));
 				}
 			},100);
-		},100)
-/*
-			;(function(i){
-				$.scrollTo(document.height,10);
-				setTimeout(function(){
-					$.scrollTo(i,10);
-				 	setTimeout(function(){
-				 		menu[i] = window.scrollY;
-						console.log(JSON.stringify(menu));
-				 	},100)
-				 },100);
-			})(i);
-			sleep(250);
-		}
-		*/
+		},100);
 	},500);
 
 	$('div.language a.active').click(function(){
@@ -105,5 +110,52 @@
 
 	//controller.addTween('#aboutImg', TweenMax.from( $('#aboutImg'), .25, {css:{opacity:0, rotation: 720}, ease:Quad.easeOut}));
 	//scrollorama.animate('#aboutImg',{ delay: 0, duration: 600, property:'left', start:400, end:1220 });
+
+	/*
+	 * SCROLLING FUN START HERE!!!
+	 *
+	 */
+	
+
+	if(window.addEventListener) document.addEventListener('DOMMouseScroll', smoothScroll, false);
+	document.onmousewheel = smoothScroll;
+
+	var lastTrick = Date.now();
+	function smoothScroll(e) { //param e as event
+		if(Date.now()-lastTrick<500){
+			lastTrick = Date.now();
+			 return;
+		}
+
+		lastTrick = Date.now();
+
+		var delta = 0;
+		if (!event) event = window.event;
+
+		// normalize the delta
+		if (event.wheelDelta) {
+			// IE & Opera
+			delta = event.wheelDelta / 60;
+		} else if (event.detail) {
+			// W3C
+			delta = -event.detail / 2;
+		}
+
+		console.log(delta);
+
+		//some extra normalization
+		delta *= 10;
+		if(delta < 0){
+			if(currentMenu!="#contactus"){
+				scrollTopage(nextMenu(currentMenu));
+			}
+		}else{
+			if(currentMenu!="#aboutus"){
+				scrollTopage(previousMenu(currentMenu));
+			}
+		}
+}
+
+
 
 })(jQuery);
