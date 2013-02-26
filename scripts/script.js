@@ -1,28 +1,39 @@
 ;(function($,undefined){
+	var prefix= ($.browser.webkit)  ? '-webkit-' :
+				($.browser.mozilla) ? '-moz-' : 
+				($.browser.msie)    ? '-ms-' :
+				($.browser.opera)   ? '-o-' : '',
 
-	var menu = {"#home":0,"#aboutus":400,"#aboutsaffron":1300,"#products":2580,"#product1-detail":3491,"#product2-detail":4256,"#product3-detail":5021,"#product4-detail":5786,"#product5-detail":6551,"#product6-detail":7316,"#product7-detail":8081,"#product8-detail":8846,"#certificates":9611,"#laboratory":10376,"#contactus":11091}
+		menu = {"#home":0,"#aboutus":400,"#aboutsaffron":1300,"#products":2580,"#certificates":9611,"#laboratory":10376,"#contactus":11091}
+
+	$(".logo-intro").css(prefix+'transform',"scale(1.4)"); // scale logo for intro
+	
+	$("div.language").css({
+		'top':(window.innerHeight-400)+'px'
+	});
 
 	var startPanel = function (){
-		$('div.full-bg').animate({'height':'425px'},300);
+		$.scrollTo(0,1);
+		$('div.full-bg').animate({'height':'190px'},800);
 		setTimeout(function(){
-			$('section.flags').animate({'opacity':'0'},200,function(){
+			$('section.flags').animate({'opacity':'0'},300,function(){
 				$(this).css({'display':'none'});
 			});
 		},100);
 		setTimeout(function(){
-			$('div.full-bg').animate({'height':'190'});
-			$('.language').animate({'top':'80'});
-			$(".logo-intro").removeClass("biglogo").addClass("smalllogo"); // scale(.7)
-		},270);
-		setTimeout(function(){
-			$('nav menu').animate({'top':'17px'});
+			//$('div.full-bg').animate({'height':'190'},400);
+			$('.language').animate({'top':'110px'},400);
+			//$(".logo-intro").removeClass("biglogo").addClass("smalllogo"); // scale(.7)
+			$(".logo-intro").css(prefix+'transform',"scale(1)");
 		},400);
 		setTimeout(function(){
+			$('nav menu').animate({'top':'17px'});
+		},600);
+		setTimeout(function(){
 			$.scrollTo(menu["#aboutus"],300);
-		},500);
-	}
-
-	var endPanel = function (){
+		},700);
+	},
+	endPanel = function (){
 		$('nav menu').animate({'top':'-117px'},400);
 		setTimeout(function(){
 			$(".logo-intro").removeClass("smalllogo").addClass("biglogo"); // scale(1)
@@ -36,10 +47,6 @@
 			$('section.flags').css({'display':'block'}).animate({'opacity':'1'},300);
 		},900);
 	}
-
-	$("div.language").css({
-		'top':(window.innerHeight-450)+'px'
-	});
 
 
 	var currentMenu = "#aboutus";
@@ -70,7 +77,7 @@
 
 
 	var scrollTopage = function(linkTo){
-		$.scrollTo( menu[linkTo], 1500, 'easeInOutExpo');
+		$.scrollTo( menu[linkTo], 1500, 'easeOutExpo');
 		currentMenu = linkTo;
 	}
 
@@ -163,9 +170,6 @@
 	/*
 	 * SCROLLING FUN START HERE!!!
 	 */
-	
-	if(window.addEventListener) document.addEventListener('DOMMouseScroll', smoothScroll, false);
-	document.onmousewheel = smoothScroll;
 
 	var lastTrick = Date.now(),
 	smoothScroll = function (e) { //param e as event
@@ -202,5 +206,8 @@
 			}
 		}
 	}
+
+	if(window.addEventListener) document.addEventListener('DOMMouseScroll', smoothScroll, false);
+	document.onmousewheel = smoothScroll;
 
 })(jQuery);
