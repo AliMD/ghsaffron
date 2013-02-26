@@ -74,23 +74,7 @@
 				},700); // 800-100
 			},300); // 400-100
 		},200); // scroll time
-
-		/*
-		$('nav menu').animate({'top':'-117px'},400);
-		setTimeout(function(){
-			$(".logo-intro").removeClass("smalllogo").addClass("biglogo"); // scale(1)
-			$('.language').animate({'top':(window.innerHeight-450)+'px'});
-			$('div.full-bg').animate({'height':'425'})
-		},200)
-		setTimeout(function(){
-			$('div.full-bg').animate({'height':'825px'},300)
-		},400);
-		setTimeout(function(){
-			$('section.flags').css({'display':'block'}).animate({'opacity':'1'},300);
-		},900);
-*/
 	}
-
 
 	var currentMenu = "#aboutus",
 	nextMenu = function(c) { //return the next menu from c
@@ -120,11 +104,10 @@
 
 	var scrollTopage = function(linkTo){
 		currentMenu = linkTo;
-		if(!menu[linkTo])return;
+		if(!menu[linkTo]) return;
 		$.scrollTo( menu[linkTo], 1500, 'easeOutExpo');
 	}
 
-	
 	$("nav menu a,div.page-link > a").click(function(){
 		var link = $(this).attr("href");
 		scrollTopage(link);
@@ -191,7 +174,7 @@
 
 		$("div.case-train div.train").animate({
 			'left': -(n*980) + 'px'
-		},400,'easeOutBack');
+		},1000,'easeOutBack');
 
 		currentslide = n;
 	}
