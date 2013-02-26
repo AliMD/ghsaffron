@@ -8,9 +8,7 @@ function startPanel(){
 	setTimeout("$('div.full-bg').animate({'height':'190'})",300);
 	setTimeout("$('.language').animate({'top':'80'})",300);
 	setTimeout(function(){
-		$(".logo-intro").css({
-			'-webkit-transform': 'scale(0.7)'
-		}).addClass("rotate");
+		$(".logo-intro").removeClass("biglogo").addClass("smalllogo"); // scale(.7)
 	},300)
 	setTimeout("$('nav menu').animate({'top':'17px'})",400);
 	setTimeout("$.scrollTo(1800,200,'ease-in-out')",500);
@@ -19,9 +17,7 @@ function startPanel(){
 function endPanel(){
 	$('nav menu').animate({'top':'-117px'});
 	setTimeout(function(){
-		$(".logo-intro").css({
-			'-webkit-transform': 'scale(1)'
-		}).removeClass("rotate");
+		$(".logo-intro").removeClass("smalllogo").addClass("biglogo"); // scale(1)
 	},200)
 	setTimeout(function(){
 		$('.language').animate({'top':(window.innerHeight-450)+'px'});
@@ -35,9 +31,6 @@ function endPanel(){
 
 
 (function($,undefined){
-	//setTimeout("$('header').removeClass('preload')",300);
-	//setTimeout("$('#logo').removeClass('preload')",1000);
-	//setTimeout("$('menu').removeClass('preload')",1400);
 
 	$("div.language").css({
 		'top':(window.innerHeight-450)+'px'
@@ -110,8 +103,5 @@ function endPanel(){
 		slider(currentslide-1);
 	});
 	// product slider
-
-	//controller.addTween('#aboutImg', TweenMax.from( $('#aboutImg'), .25, {css:{opacity:0, rotation: 720}, ease:Quad.easeOut}));
-	//scrollorama.animate('#aboutImg',{ delay: 0, duration: 600, property:'left', start:400, end:1220 });
 
 })(jQuery);
