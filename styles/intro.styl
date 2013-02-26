@@ -5,7 +5,7 @@
 	width 300px
 	height 291px
 	position absolute
-	bottom 180px
+	top 0
 	left 0
 	right 0
 	margin 0 auto
@@ -14,20 +14,18 @@
 	img
 		display block
 
-
 div.language
 	position fixed
-	bottom 100px
 	left 0
 	right 0
-	min-height 360px
+	/*min-height 270px*/
 	width 580px
 	margin 0 auto
 
 	.flags
 		width 460px
 		position absolute
-		bottom 30px
+		bottom -400px
 		left 0
 		right 0
 		margin 0 auto
@@ -42,29 +40,17 @@ div.language
 			text-align center
 			font-size 15px
 
-			&#fr
-				//margin-right auto
-
 			img
 				margin-bottom 2px
 				display block
 				width 50px
 				height 50px
 
-div.loading
-	position fixed
-	top 0
-	left 0
-	bottom 0
-	right 0
-	background-color #871716
-	z-index 100000
-
 .rotate
 	perspective 400
 	perspective-origin center bottom
 	
-	& img
+	& canvas
 		display block
 		animation-name logoAnim
 		animation-duration 5s
@@ -72,3 +58,9 @@ div.loading
 		animation-iteration-count infinite
 		animation-timing-function ease-in-out
 		animation-fill-mode backwards
+
+.smalllogo
+	transform scale(0.7)
+
+.biglogo
+	transform scale(1)

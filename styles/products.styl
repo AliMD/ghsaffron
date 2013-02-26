@@ -7,68 +7,103 @@ section#products
 	margin 0 auto 50px auto
 	padding-top 1px
 
-	span.prd-hover
-		overflow hidden
-		display block
-		position absolute
-		top 0
-		left 0
-		right 0
-		bottom 0
-		color rgba(255, 255, 255, 0.65)
-		opacity 0
-		z-index 2
-		font-size 14px
-		font-family 'Pacifico',cursive
-		text-align right
-		font-style italic
-		padding-left 5px
-		padding-right 15px
-		padding-top 140px
-		white-space nowrap
-		background-color black
-		border-radius 10px
-		transition all 800ms ease-out
+	& div.container-slider
+		position relative
 
-	div.prd-title
-		background-image url(images/line.png)
-		background-repeat no-repeat
-		background-position 400px 23px
-		margin 20px auto 0 auto
-		width inherit
-		height 20px
-		padding-left 248px
-		padding-right 32px
-		font-size 30px
-		min-height 40px
-		font-family nazanin
-		color #8a49b3
-
-	div.prd-shadow
-		background-image url(images/prd-shadow.png)
-		background-repeat no-repeat
-		width 800px
-		background-size cover
-		margin 10px auto 0 auto
-		height 28px
-
-	& > div.prds
-		margin 0 auto
-		width 850px
-
-		& > div
-			height 180px
-			width 180px
-			overflow hidden
-			float left
-			margin 25px 0 0 25px
-			border-radius 10px
+		div.prev, div.next
+			width 30px
+			height 50px
+			position absolute
+			top 200px
+			background url(images/arrow.png) no-repeat
 			cursor pointer
-			position relative	
-		
-			&:hover span
-				opacity 0.65
-				transition-duration 500ms
+			z-index 10
+
+		div.prev
+			left -100px
+			background-position 0 center
+
+		div.next
+			right -100px
+			background-position -30px center
+
+		& div.case-train
+			position relative
+			width 980px
+			min-height 512px
+			overflow hidden
+
+			& div.train
+				width 10000px
+				position absolute
+				left 0
+
+				& div.product-slide
+					width 980px
+					float left
+
+					span.prd-hover
+						overflow hidden
+						display block
+						position absolute
+						top 0
+						left 0
+						right 0
+						bottom 0
+						color rgba(255, 255, 255, 0.65)
+						opacity 0
+						z-index 2
+						font-size 14px
+						font-family 'Pacifico',cursive
+						text-align right
+						font-style italic
+						padding-left 5px
+						padding-right 15px
+						padding-top 140px
+						white-space nowrap
+						background-color black
+						border-radius 10px
+						transition all 800ms ease-out
+
+					div.prd-title
+						background-image url(images/line.png)
+						background-repeat no-repeat
+						background-position 400px 23px
+						margin 20px auto 0 auto
+						width inherit
+						height 20px
+						padding-left 248px
+						padding-right 32px
+						font-size 30px
+						min-height 40px
+						font-family nazanin
+						color #8a49b3
+
+					div.prd-shadow
+						background-image url(images/prd-shadow.png)
+						background-repeat no-repeat
+						width 800px
+						background-size cover
+						margin 10px auto 0 auto
+						height 28px
+
+					& div.prds
+						margin 0 auto
+						width 850px
+
+						& > div
+							height 180px
+							width 180px
+							overflow hidden
+							float left
+							margin 25px 0 0 25px
+							border-radius 10px
+							cursor pointer
+							position relative	
+						
+							&:hover span
+								opacity 0.65
+								transition-duration 500ms
 
 .ltrLang section#products span.prd-hover
 	text-align left
@@ -87,3 +122,6 @@ section#products
 	font-weight: bold;
 	text-transform: capitalize;
 	color: #8A49B3;
+
+.arrowhide
+	display none
