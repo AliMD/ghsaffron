@@ -1,4 +1,5 @@
 function startPanel(){
+
 	$('div.full-bg').animate({'height':'425px'},300);
 	setTimeout(function(){
 		$('section.flags').animate({'opacity':'0'},200,function(){
@@ -32,6 +33,20 @@ function endPanel(){
 
 (function($,undefined){
 
+	var widthSlide = ($(window).width()<1024) ? 620:980;
+	function resize() {
+		var wh = $(window).width();
+		widthSlide = (wh<1024) ? 620:980;
+		console.log(wh);
+		$('div.show-res').html('width: ' + wh);
+	};
+	var resizeTimer;
+	$(window).resize(function() {
+		clearTimeout(resizeTimer);
+		resizeTimer = setTimeout(resize, 200);
+	});
+
+
 	$("div.language").css({
 		'top':(window.innerHeight-450)+'px'
 	});
@@ -49,10 +64,10 @@ function endPanel(){
 		"#home" : 0,
 		"#aboutus" : 1800,
 		"#aboutsaffron" : 4585,
-		"#products" : 10485,
-		"#certificates" : 13885,
-		"#laboratory" : 16485,
-		"#contactus" : 20525
+		"#products" : 11685, //10485,
+		"#certificates" : 14485, // 13885,
+		"#laboratory" : 17685, //16485,
+		"#contactus" : 22890// 20525
 	}
 
 	var scrollTopage = function(linkTo){
@@ -79,6 +94,7 @@ function endPanel(){
 	// product slider
 	var slides = $("div.case-train div.train > div"),
 		currentslide = 0;
+		//widthSlide = ($(window).width()<1024) ? 620:980;
 	slider = function(n){
 		if(n>slides.length-1 || n==0) { 
 			n=0; 
@@ -87,7 +103,7 @@ function endPanel(){
 		if(n>0) $('div.prev').removeClass('arrowhide');
 		if(n<0 || n==currentslide) return false;
 		$("div.case-train div.train").animate({
-			'left': -(n*980) + 'px'
+			'left': -(n*widthSlide) + 'px'
 		},300);
 		currentslide = n;
 	}
