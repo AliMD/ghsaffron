@@ -6,6 +6,7 @@ This is the source for the main Ghasem Saffron company website, found at [ghsaff
 * [Ali Mihandoost `AliMD`](https://github.com/AliMD) Technical Manager / Developer
 * [Mahdi Jannatian `Mahdi-Jannatian`](https://github.com/Mahdi-Jannatian) AriazDevs Manager
 * [Ali aGHasizadeh `AliGH`](https://github.com/AliGH) Developer / Programmer
+* [Mohammad Reza Shariatzadeh `Mrshcom`](https://github.com/Mrshcom) Developer / Programmer
 * [Mohammad Rahimpur `Rahimpur`](http://127.0.0.1) Graphic Designer
 
 ## THANKS (Contributors)
