@@ -64,10 +64,10 @@ function endPanel(){
 		"#home" : 0,
 		"#aboutus" : 1800,
 		"#aboutsaffron" : 4585,
-		"#products" : 11685, //10485,
-		"#certificates" : 14485, // 13885,
-		"#laboratory" : 17685, //16485,
-		"#contactus" : 22890// 20525
+		"#products" : 11185,
+		"#certificates" : 14085,
+		"#laboratory" : 16785, 
+		"#contactus" : 21020
 	}
 
 	var scrollTopage = function(linkTo){
