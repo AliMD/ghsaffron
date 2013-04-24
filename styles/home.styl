@@ -28,3 +28,137 @@ section#home
 
 		& p
 			font-size 20px 
+
+div.show-res
+	width 90px
+	height 30px
+	font-family tahoma
+	background-color red
+	position fixed
+	bottom 0
+	right 0
+	z-index 1000
+
+@media only screen and (max-width: 1024px)
+	p
+		//background-color red
+		font-size 18px !important
+
+	.rtlLang 
+		#pages-wrapper
+			width 100%
+			.pages
+				width 100%
+			section#aboutus,
+			section#aboutsaffron,
+			section#certificates,
+			section#laboratory
+				div.des
+					margin-left 46%
+					margin-right 10%
+					h2
+						font-size 28px
+				div.about-img
+					width 320px
+					margin-left 8%
+					background-size contain
+
+			section#contactus 
+				h2
+					font-size 28px	
+				aside.contact_info
+					width 240px
+					li
+						font-size 12px
+						margin-bottom 5px
+				section.form
+					width 460px
+					.inputs
+						width 148px
+						input
+							width 135px
+							padding 3px
+							margin 4px 0
+					textarea 
+						width 250px
+						height 139px
+						margin-top 3px
+						padding 3px
+					input[type=reset]
+						margin-left 117px
+
+
+			section#certificates 
+				div.cert-right 
+					width 415px
+					section.background_holder
+						width 260px
+						height 254px
+					div.cert-shadow-line-holder
+						width 260px
+						section.thumb_holder
+							bottom 31px
+							left 140px
+							div
+								width 60px
+
+
+			section#products 
+				div.container-slider
+					div.next
+						right 30px
+					div.prev
+						left 30px
+					div.case-train
+						width 620px
+						div.train 
+							div.product-slide
+								width 620px
+								div.prd-title
+									background-position 60px 23px
+								div.prds
+									width 620px
+									& > div
+										width 140px
+										height 140px
+										margin 10px 0 0 10px
+							div#product1-detail,
+							#product2-detail,
+							#product3-detail,
+							#product4-detail,
+							#product5-detail,
+							#product6-detail,
+							#product7-detail,
+							#product8-detail
+								div.des
+									margin-left 360px
+									h2
+										font-size 28px
+								div.pics
+									width 355px
+									height 320px
+									div.pic1
+										width 118px
+										height 80px
+										left 0
+									div.pic2
+										width 151px
+										height 136px
+										left 58px
+									div.pic3
+										width 228px
+										height 197px
+										left 131px
+
+
+					
+
+
+
+	
+
+
+
+@media only screen and (max-width: 767px)
+	body
+		//background-color blue

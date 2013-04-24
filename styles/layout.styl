@@ -35,7 +35,7 @@ header
 
 #pages-wrapper
 	width 980px
-	height 21600px //pagesHeight * 7
+	height 22000px //pagesHeight * 7
 	margin 0 auto
 	background-color pageBackColor 
 	
@@ -60,24 +60,23 @@ header
 	#aboutsaffron
 		height 1280px
 
-.ltrLang #pages-wrapper
-	height 43150px
-
-.ltrLang #pages-wrapper #aboutus
-		height 900px
-.ltrLang #pages-wrapper #aboutsaffron
-		height 1630px
+.ltrLang 
+	#pages-wrapper
+		height 22210px
+		#aboutus
+			height 900px
+		#aboutsaffron
+			height 1630px
 
 div.page-link
 	width 200px
 	height 58px
 	background url("images/page-link.png") no-repeat center center
-	position fixed
+	position absolute
 	bottom 5px
 	left 0px
 	right 0px
 	margin 0 auto
-
 
 	& a
 		display block
@@ -91,6 +90,11 @@ div.page-link
 
 .ltrLang div.page-link a
 	font-size 13px
+
+html[lang="es"]
+	section#laboratory
+		div.page-link
+			bottom -8px
 
 
 div.full-bg
