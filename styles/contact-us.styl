@@ -18,12 +18,16 @@ section#contactus
 			img
 				float left
 
+	aside.contact_info
+		li
+			font-size 16px
+
 	section.form
 		float left
 		width 610px
 
 		p
-			font-size 14px
+			font-size 16px
 
 		.inputs
 			width: 230px;
@@ -76,9 +80,13 @@ section#contactus
 			&.err
 				border  1px solid red
 
-.ltrLang section#contactus section.form textarea
-	height 164px
-			
+.ltrLang 
+	section#contactus 
+		section.form 
+			textarea
+				height 164px
+			p
+				font-size 14px
 #ifrm
 	width 100%
 	height 0
@@ -149,3 +157,14 @@ div.google-map
 	min-height 240px
 	width 930px
 	margin 0 auto
+	iframe
+		width 665px
+		height 250px
+		float right
+	div.qrcode
+		width 250px
+		height 250px
+		float left
+		background-image url('images/qrcode.png')
+		background-position center center
+		background-repeat no-repeat
