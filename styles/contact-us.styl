@@ -1,10 +1,7 @@
-
 /* contact-us section
 -------------------------------------------------- */
-
 section#contactus
 	height 960px !important
-
 	div.title
 		h2
 			font-size 32px
@@ -17,11 +14,48 @@ section#contactus
 			overflow hidden
 			img
 				float left
-
 	aside.contact_info
-		li
-			font-size 16px
+		width 320px
+		padding 0 32px 0 0
+		ul
+			padding 0px
+			li
+				list-style none
+				font-size 16px
+				line-height 24px
+				margin-bottom 10px
+				i
+					margin-left 10px
+					margin-right 0
+		div.social
+				margin-right 54px
+				ul
+					list-style-type none
+					li
+						float right
+						a
+							display block
+							width 45px
+							height 45px
+							background-image url('images/icons/socialis.png')
+							margin-right 5px
 
+						.facebook
+							background-position -3px -4px
+							&:hover
+								background-position -3px -58px
+						.twitter
+							background-position -60px -4px
+							&:hover
+								background-position -60px -58px
+						.gp
+							background-position -262px -111px
+							&:hover
+								background-position -262px -161px
+						.linkedin
+							background-position -312px -111px
+							&:hover
+								background-position -312px -161px
 	section.form
 		float left
 		width 610px
@@ -76,9 +110,23 @@ section#contactus
 			background-color #eee
 			padding			 5px 10px
 			transition		 border 500ms
-
 			&.err
 				border  1px solid red
+	div.google-map
+		min-height 250px
+		width 930px
+		margin 0 auto
+		iframe
+			width 665px
+			height 250px
+			float right
+		div.qrcode
+			width 250px
+			height 250px
+			float left
+			background-image url('images/qrcode.png')
+			background-position center center
+			background-repeat no-repeat
 
 .ltrLang 
 	section#contactus 
@@ -87,84 +135,25 @@ section#contactus
 				height 164px
 			p
 				font-size 14px
-#ifrm
-	width 100%
-	height 0
-aside.contact_info
-	width 320px
-	padding 0 32px 0 0
-
-aside.contact_info span
-	float right
-	background url("images/icons/sprite.png") no-repeat
-	width 20px
-	height 20px
-	display block
-	margin-left 10px
-	
-.ltrLang aside.contact_info span
-	float left
-	margin-right 10px
-	margin-left 0
-
-aside.contact_info ul
-	padding 0px
-
-aside.contact_info li
-	list-style none
-	font-size 14px
-	line-height 24px
-	margin-bottom 10px
-
-aside.contact_info span.location
-	background-position 1px -98px
-aside.contact_info span.phone
-	background-position 1px -120px
-aside.contact_info span.email
-	background-position 1px -145px;
-	
-div.social
-	margin-right 54px
-	ul
-		list-style-type none
-		li
-			float right
-			a
-				display block
-				width 45px
-				height 45px
-				background-image url('images/icons/socialis.png')
-				margin-right 5px
-
-			.facebook
-				background-position -3px -4px
-				&:hover
-					background-position -3px -58px
-			.twitter
-				background-position -60px -4px
-				&:hover
-					background-position -60px -58px
-			.gp
-				background-position -262px -111px
-				&:hover
-					background-position -262px -161px
-			.linkedin
-				background-position -312px -111px
-				&:hover
-					background-position -312px -161px
-
-div.google-map
-	min-height 240px
-	width 930px
-	margin 0 auto
-	iframe
-		width 665px
-		height 250px
-		float right
-	div.qrcode
-		width 250px
-		height 250px
-		float left
-		background-image url('images/qrcode.png')
-		background-position center center
-		background-repeat no-repeat
+		#ifrm
+			width 100%
+			height 0
+		aside.contact_info
+			width 320px
+			padding 0 0 0 32px
+			ul
+				padding 0px
+				li
+					list-style none
+					font-size 14px
+					line-height 24px
+					margin-bottom 10px
+					i
+						margin-right 10px
+						margin-left 0
+			
+		div.google-map
+			iframe
+				float left
+			div.qrcode
+				float right
