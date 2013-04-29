@@ -22,115 +22,57 @@ div#product1-detail,#product2-detail,#product3-detail,#product4-detail,#product5
 			color #8a49b3
 
 		& p
-			font-size 16px 
+			font-size 16px
 
-	& div.pics
-		position relative
-		width 550px
+		div.back-product
+			cursor pointer
+			width 80px
+			font-size 25px
+			color hsl(277, 42%, 49%)
+
+	div.prd-slider
+		width 450px
 		height 400px
+		position relative
+		left 60px
 
-		& div
-			background-repeat no-repeat
-			background-size contain		
-
-		& div.pic1
-			background-image url('images/prd_1_1.png')
-			width 188px
-			height 128px
+		div.prd-prev,
+		div.prd-next
+			width 32px
+			height 32px
+			font-size 35px
+			cursor pointer
+			z-index 50
+			color hsl(0, 0%, 70%)
 			position absolute
-			bottom 50px
-			left 0px
-			z-index 30
-		& div.pic2
-			background-image url('images/prd_1_2.png')
-			width 221px
-			height 199px
-			position absolute
-			bottom 50px
-			left 108px
-			z-index 20
-		& div.pic3
-			background-image url('images/prd_1_3.png')
-			width 298px
-			height 258px
-			position absolute
-			bottom 50px
-			left 240px
-			z-index 10
+			top 150px
 
-		& div.prd1-saff
-			background-image url('images/prd/saffron1.jpg');
-			width 320px
-			height 291px
-			position absolute
-			bottom 110px
-			left 150px
-			box-shadow 0 0 6px hsl(0 ,0% ,30%)
+		div.prd-prev
+			left -40px
 
-		& div.prd2-saff
-			background-image url('images/prd/saffron2.jpg');
-			width 320px
-			height 305px
-			position absolute
-			bottom 110px
-			left 150px
-			box-shadow 0 0 6px hsl(0 ,0% ,30%)
+		div.prd-next
+			right -32px
 
-		& div.prd3-saff
-			background-image url('images/prd/saffron3.jpg');
-			width 234px
-			height 350px
-			position absolute
-			bottom 78px
-			left 195px
-			box-shadow 0 0 6px hsl(0 ,0% ,30%)
+		div.prd-casetrain
+			position relative
+			width 450px
+			height 400px
+			overflow hidden
 
-		& div.prd4-saff
-			background-image url('images/prd/saffron4.jpg');
-			width 212px
-			height 360px
-			position absolute
-			bottom 78px
-			left 195px
-			box-shadow 0 0 6px hsl(0 ,0% ,30%)
-	
-		& div.saff-tea
-			background-image url('images/prd/saff_tea.png')
-			width 374px
-			height 239px
-			position absolute
-			bottom 110px
-			left 100px
+			div.prd-train
+				width 10000px
+				height 350px
+				overflow hidden
+				position absolute
+				left 0
 
-		& div.cardamom-img
-			background-image url('images/prd/cardamom.jpg')
-			width 235px
-			height 225px
-			position absolute
-			bottom 130px
-			left 190px
-			box-shadow 0 0 6px hsl(0 ,0% ,30%)
-
-		& div.candy-img
-			background-image url('images/prd/candy.png')
-			width 241px
-			height 324px
-			position absolute
-			bottom 110px
-			left 200px
-
-
-		& .pr-img1
-			bottom 80px
-			left 173px
-
-		& .pr-img2
-			bottom 80px
-			left 173px
-
-		& .pr-img3
-			bottom 80px
-			left 173px
+				& > div
+					width 450px
+					height 350px
+					float left
+					background-image url('images/prd/saffron1.jpg')
+					background-repeat no-repeat
+					background-position center center
 
 .ltrLang #product1-detail,.ltrLang #product2-detail,.ltrLang #product3-detail,.ltrLang #product4-detail,.ltrLang #product5-detail,.ltrLang #product6-detail,.ltrLang #product7-detail,.ltrLang #product8-detail
 	div.des
