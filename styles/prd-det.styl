@@ -44,8 +44,8 @@ div#product1-detail,#product2-detail,#product3-detail,#product4-detail,#product5
 
 		div.prd-prev,
 		div.prd-next
-			width 32px
-			height 32px
+			width 30px
+			height 30px
 			font-size 35px
 			cursor pointer
 			z-index 50
@@ -55,12 +55,16 @@ div#product1-detail,#product2-detail,#product3-detail,#product4-detail,#product5
 			display none
 			opacity 0
 			transition all 200ms
+			background-image url('images/prd_arrow.png')
+			background-repeat no-repeat
 
 		div.prd-prev
-			left 5px
+			left 13px
+			background-position 0 0
 
 		div.prd-next
-			right 12px
+			right 13px
+			background-position -30px 0
 
 		div.prd-casetrain
 			position relative
@@ -90,4 +94,11 @@ div#product1-detail,#product2-detail,#product3-detail,#product4-detail,#product5
 		h2
 			font-size 30px
 		p
-			font-size 14px 
+			font-size 14px
+	div.prd-slider
+		right 110px
+		left auto
+		div.prd-prev
+			left 13px
+		div.prd-next
+			right 13px
