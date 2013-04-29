@@ -31,10 +31,16 @@ div#product1-detail,#product2-detail,#product3-detail,#product4-detail,#product5
 			color hsl(277, 42%, 49%)
 
 	div.prd-slider
-		width 450px
+		width 330px
 		height 400px
 		position relative
-		left 60px
+		left 110px
+		&:hover
+			div.prd-prev,
+			div.prd-next
+				transition all 200ms
+				display block
+				opacity 1
 
 		div.prd-prev,
 		div.prd-next
@@ -46,28 +52,31 @@ div#product1-detail,#product2-detail,#product3-detail,#product4-detail,#product5
 			color hsl(0, 0%, 70%)
 			position absolute
 			top 150px
+			display none
+			opacity 0
+			transition all 200ms
 
 		div.prd-prev
-			left -40px
+			left 5px
 
 		div.prd-next
-			right -32px
+			right 12px
 
 		div.prd-casetrain
 			position relative
-			width 450px
+			width 330px
 			height 400px
 			overflow hidden
 
 			div.prd-train
 				width 10000px
-				height 350px
+				height 400px
 				overflow hidden
 				position absolute
 				left 0
 
 				& > div
-					width 450px
+					width 330px
 					height 350px
 					float left
 					background-image url('images/prd/saffron1.jpg')
