@@ -69,10 +69,10 @@ section#products
 					div.prd-title
 						background-image url(images/line.png)
 						background-repeat no-repeat
-						background-position 400px 23px
-						margin 20px auto 0 auto
-						padding-left 248px
+						background-position 90px 23px
+						margin 20px auto 0
 						padding-right 32px
+						padding-left 32px
 						font-size 30px
 						min-height 40px
 						font-family nazanin
@@ -82,7 +82,7 @@ section#products
 						text-indent 10000px
 						overflow hidden
 						img
-							float left
+							float right
 
 					div.prd-shadow
 						background-image url(images/prd-shadow.png)
@@ -97,15 +97,17 @@ section#products
 						width 850px
 
 						& > div
-							height 180px
-							width 180px
+							height 200px
+							width 200px
 							overflow hidden
 							float left
-							margin 25px 0 0 25px
+							margin 25px 0 0 10px
 							border-radius 10px
 							cursor pointer
-							position relative	
-						
+							position relative
+							img
+								border-radius 10px
+
 							&:hover span
 								opacity 0.65
 								transition-duration 500ms
@@ -114,22 +116,9 @@ section#products
 	section#products 
 		span.prd-hover
 			text-align left
-			
+
 		div.container-slider div.case-train div.train div.product-slide div.prd-title
-			background-image url(images/line.png)
-			background-repeat no-repeat
 			background-position 180px 23px
-			margin 20px auto 0 auto
-			padding-left 32px
-			min-height 40px
-			font-size 32px
-			font-weight bold
-			text-transform capitalize
-			color #8A49B3
-			width auto
-			height 60px
-			text-indent 10000px
-			overflow hidden
 			img
 				float left
 
