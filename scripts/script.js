@@ -196,24 +196,38 @@
 
 
   // sub product slider
-  var prdSlides = $("div.prd-casetrain div.prd-train > div"), //3
+  var prdTrain = $('div.prd-casetrain div.prd-train'),
+    prdSlides = $("div.prd-casetrain div.prd-train > div"),
     prdCurrentslide = 0,
     prdNextBtn = $('div.prd-next'),
-    prdPrevBtn = $('div.prd-prev');
-  var subSlider = function(n){
-    if(n>2) n=0;
-    if(n<0) n=2;
-    $("div.prd-casetrain div.prd-train").animate({
+    prdPrevBtn = $('div.prd-prev'),
+    autoPlayIv = false;
+  go2slide = function(n){
+    if(n>2) n = 0; //prdSlides.length-1
+    if(n<0) n = 2;
+    prdTrain.animate({
       'left': -(n*330) + 'px'
     },400);
-    prdCurrentslide = n;
-  };
-  prdNextBtn.click(function(){
-    subSlider(prdCurrentslide+1);
+    prdCurrentslide=n;
+  }
+  prdNextBtn.click(nextSlide = function(){
+    go2slide(prdCurrentslide+1);
   });
   prdPrevBtn.click(function(){
-    subSlider(prdCurrentslide-1);
+    go2slide(prdCurrentslide-1);
   });
+  (autoPlayStart = function(){
+    if(autoPlayIv) return;
+    autoPlayIv = setInterval(nextSlide, 2000);
+  })();
+  autoPlayStop = function(){
+    clearInterval(autoPlayIv);
+    autoPlayIv = false;
+  }
+  $('div.prd-slider').mouseover(autoPlayStop);
+  $('div.prd-slider').mouseout(autoPlayStart);
+
+
 
   /*
    * SCROLLING FUN START HERE!!!
