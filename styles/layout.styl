@@ -35,7 +35,7 @@ header
 
 #pages-wrapper
 	width 980px
-	height 22000px //pagesHeight * 7
+	height 19780px
 	margin 0 auto
 	background-color pageBackColor 
 	
@@ -47,10 +47,6 @@ header
 			
 		.spacer
 			height 275px
-
-.ltrLang 
-	#pages-wrapper
-		height 22210px
 
 div.page-link
 	width 200px
@@ -75,12 +71,6 @@ div.page-link
 .ltrLang div.page-link a
 	font-size 13px
 
-html[lang="es"]
-	section#laboratory
-		div.page-link
-			bottom -8px
-
-
 div.full-bg
 	height 825px
 	background-image url(images/backimg.jpg)
@@ -94,6 +84,10 @@ div.arc-bg
 	background-repeat no-repeat
 	background-position center top
 
-
-
-	
+html[lang="es"],
+html[lang="fr"]
+	#pages-wrapper
+		height 19870px
+html[lang="en-US"]
+	#pages-wrapper
+		height 19760px
