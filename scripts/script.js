@@ -4,7 +4,7 @@
         ($.browser.msie)    ? '-ms-' :
         ($.browser.opera)   ? '-o-' : '',
 
-    menu = {"#aboutus":2400,"#aboutsaffron":5270,"#products":11290,"#certificates":14201,"#laboratory":16966,"#contactus":21062};
+    menu = {"#aboutus":2400,"#aboutsaffron":5130,"#products":9220,"#certificates":12021,"#laboratory":14786,"#contactus":18782};
   
   $(".logo-intro").css(prefix+'transform','scale(1.4)'); // scale logo for intro
   
@@ -194,7 +194,6 @@
     slider(0);
   });
 
-
   // sub product slider
   var prdTrain = $('div.prd-casetrain div.prd-train'),
     prdSlides = $("div.prd-casetrain div.prd-train > div"),
@@ -209,7 +208,7 @@
       'left': -(n*330) + 'px'
     },400);
     prdCurrentslide=n;
-  }
+  };
   prdNextBtn.click(nextSlide = function(){
     go2slide(prdCurrentslide+1);
   });
@@ -223,16 +222,13 @@
   autoPlayStop = function(){
     clearInterval(autoPlayIv);
     autoPlayIv = false;
-  }
+  };
   $('div.prd-slider').mouseover(autoPlayStop);
   $('div.prd-slider').mouseout(autoPlayStart);
-
-
 
   /*
    * SCROLLING FUN START HERE!!!
    */
-
   var lastTrick = Date.now(),
   smoothScroll = function (e) { //param e as event
     if(Date.now()-lastTrick<500){
