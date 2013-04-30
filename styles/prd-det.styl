@@ -1,8 +1,10 @@
 
 /* Prd-list section
 -------------------------------------------------- */
-
-div#product1-detail,#product2-detail,#product3-detail,#product4-detail,#product5-detail,#product6-detail,#product7-detail,#product8-detail
+div#product1-detail,
+#product2-detail,
+#product3-detail,
+#product4-detail
 	margin 0 auto 50px auto
 	width 1000px
 	height 400px
@@ -15,6 +17,7 @@ div#product1-detail,#product2-detail,#product3-detail,#product4-detail,#product5
 		margin-left 550px
 		height 400px
 		padding 0 32px 0 0
+		position relative
 
 		& h2
 			font-size 32px
@@ -29,6 +32,9 @@ div#product1-detail,#product2-detail,#product3-detail,#product4-detail,#product5
 			width 80px
 			font-size 17px
 			color hsl(277, 42%, 49%)
+			position absolute
+			bottom 80px
+			right 30px
 
 	div.prd-slider
 		width 330px
@@ -87,18 +93,25 @@ div#product1-detail,#product2-detail,#product3-detail,#product4-detail,#product5
 					background-repeat no-repeat
 					background-position center center
 
-.ltrLang #product1-detail,.ltrLang #product2-detail,.ltrLang #product3-detail,.ltrLang #product4-detail,.ltrLang #product5-detail,.ltrLang #product6-detail,.ltrLang #product7-detail,.ltrLang #product8-detail
-	div.des
-		margin-right 550px
-		margin-left 0px
-		h2
-			font-size 30px
-		p
-			font-size 14px
-	div.prd-slider
-		right 110px
-		left auto
-		div.prd-prev
-			left 13px
-		div.prd-next
-			right 13px
+.ltrLang 
+	#product1-detail,
+	#product2-detail,
+	#product3-detail,
+	#product4-detail
+		div.des
+			margin-right 550px
+			margin-left 0px
+			h2
+				font-size 30px
+			p
+				font-size 14px
+			div.back-product
+				right auto
+				left 30px
+		div.prd-slider
+			right 110px
+			left auto
+			div.prd-prev
+				left 13px
+			div.prd-next
+				right 13px
