@@ -4,7 +4,7 @@
         ($.browser.msie)    ? '-ms-' :
         ($.browser.opera)   ? '-o-' : '',
 
-    menu = {"#aboutus":2400,"#aboutsaffron":5130,"#products":9220,"#certificates":12021,"#laboratory":14786,"#contactus":18782};
+    menu = {"#aboutus":3600,"#aboutsaffron":7530,"#products":11620,"#certificates":14421,"#laboratory":17186,"#contactus":21182};
   
   $(".logo-intro").css(prefix+'transform','scale(1.4)'); // scale logo for intro
   
