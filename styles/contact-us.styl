@@ -36,25 +36,17 @@ section#contactus
 							display block
 							width 40px
 							height 40px
-							margin-right 10px
+							margin-left 10px
 							font-size 40px
-							color hsl(0, 0%, 39%)
-							&.facebook
-								color #4d65a1
-								&:hover
-									color hsl(0, 0%, 48%)
-							&.twitter
-								color #8bdae9
-								&:hover
-									color hsl(0, 0%, 48%)
-							&.gp
-								color #bb1902
-								&:hover
-									color hsl(0, 0%, 48%)
-							&.linkedin
-								color #7fafc7
-								&:hover
-									color hsl(0, 0%, 48%)
+							color hsl(0, 0%, 48%)
+							&.facebook:hover
+									color #074788
+							&.twitter:hover
+									color #24bbdd
+							&.gp:hover
+									color #bb1902
+							&.linkedin:hover
+									color #027cbf
 
 	section.form
 		float left
@@ -138,13 +130,16 @@ section#contactus
 		#ifrm
 			width 100%
 			height 0
+		div.social
+			ul
+				li
+					float left
 		aside.contact_info
 			width 320px
 			padding 0 0 0 32px
 			ul
 				padding 0px
 				li
-					float left
 					list-style none
 					font-size 14px
 					line-height 24px
@@ -152,6 +147,13 @@ section#contactus
 					i
 						margin-right 10px
 						margin-left 0
+			div.social
+				ul
+					li
+						float left
+						a
+							margin-left 0
+							margin-right 10px
 			
 		div.google-map
 			iframe
