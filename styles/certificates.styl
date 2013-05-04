@@ -12,25 +12,45 @@ section#certificates
 		height 360px
 		position relative
 
-		& section.background_holder
-			width 600px
-			height 288px
-			background-image url(images/cert_shadow.png)
-			background-repeat no-repeat
-			background-position center bottom
+		div.pre-cert,
+		div.next-cert
+			width 30px
+			height 30px
+			position absolute
+			top 110px
+			background-image url("images/prd_arrow_cert.png")
+			cursor pointer
+		div.pre-cert
+			left 90px
+			background-position 0 0
+		div.next-cert
+			right 90px
+			background-position -30px 0
 
-			& > div 
-				width inherit
-				height 250px
+		div.case-train-cert
+			position relative
+			width 321px
+			height 288px
+			margin 0 auto
+			overflow hidden
+
+			& section.background_holder
 				position absolute
-				left 0
 				top 0
-				right 0
-				bottom 0
-				background-image url(images/cer/HACCP.jpg)
+				left 0
+				height 288px
+				background-image url(images/cert_shadow.png)
 				background-repeat no-repeat
-				background-position center center
-				background-size contain
+				background-position center bottom
+
+				& > div 
+					width 321px
+					height 250px
+					float left
+					background-image url(images/cer/HACCP.jpg)
+					background-repeat no-repeat
+					background-position center center
+					background-size contain
 
 		& div.cert-shadow-line-holder
 			background-image url(images/cert_shadow_line.png)
@@ -51,6 +71,10 @@ section#certificates
 				background-repeat no-repeat
 				background-size contain
 				margin-left 10px
+				cursor pointer
+				opacity .6
+				&.active
+					opacity 1
 					
 	& div.des 
 		margin-left 600px
