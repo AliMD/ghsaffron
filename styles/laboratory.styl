@@ -9,9 +9,32 @@ section#laboratory
 	& div.about-img
 		width 600px
 		height 400px
-		background-image url('images/home.png')
-		background-repeat no-repeat
-		background-position left center
+		float left
+		div
+			background-repeat no-repeat
+			background-size contain
+			position absolute
+			&.saffron1
+				background-image url("images/prd/product1.png")
+				width 226px
+				height 202px
+				position absolute
+				bottom 72px
+				left -13px
+			&.saffron2
+				background-image url("images/prd/product2.png")
+				width 522px
+				height 330px
+				bottom 30px
+				left 0
+				z-index 10
+			&.saffron3
+				background-image url("images/prd/product3.png")
+				width 287px
+				height 204px
+				bottom 13px
+				left 270px
+				z-index 20
 
 	& div.des 
 		margin-left 600px
