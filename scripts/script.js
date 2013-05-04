@@ -226,6 +226,49 @@
   $('div.prd-slider').mouseover(autoPlayStop);
   $('div.prd-slider').mouseout(autoPlayStart);
 
+  //certificates slider
+  var trainCert = $('section.background_holder'),
+    listsCert = $('section.thumb_holder div')
+    currentSlideCert = 0,
+    autoPlayCert = false;
+
+  certSlide = function(n){
+    if(n>listsCert.length-1) n=0;
+    if(n<0) n = listsCert.length-1;
+    trainCert.stop().animate({
+      left:-321*n
+    },500);
+    listsCert.eq(currentSlideCert).removeClass('active');
+    listsCert.eq(n).addClass('active');
+    currentSlideCert=n;
+  }
+
+  listsCert.click(function(){
+    certSlide($(this).index());
+  });
+
+  $('div.cert-right div.next-cert').click(nextSlideCert = function(){
+    certSlide(currentSlideCert+1);
+  });
+
+  $('div.cert-right div.pre-cert').click(function(){
+    certSlide(currentSlideCert-1);
+  });
+
+  (autoPlayStartCert = function(){
+    if(autoPlayCert) return ;
+    autoPlayCert = setInterval(nextSlideCert, 5000);
+  })();
+
+  autoPlayStopCert = function(){
+    clearInterval(autoPlayCert);
+    autoPlayCert = false;
+  }
+
+  $('div.cert-right').mouseover(autoPlayStopCert);
+  $('div.cert-right').mouseout(autoPlayStartCert);
+
+
   /*
    * SCROLLING FUN START HERE!!!
    */
