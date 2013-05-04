@@ -12,6 +12,11 @@ section#certificates
 		height 360px
 		position relative
 
+		&:hover
+			div.pre-cert,
+			div.next-cert
+				display block
+
 		div.pre-cert,
 		div.next-cert
 			width 30px
@@ -20,6 +25,7 @@ section#certificates
 			top 110px
 			background-image url("images/prd_arrow_cert.png")
 			cursor pointer
+			display none
 		div.pre-cert
 			left 90px
 			background-position 0 0
