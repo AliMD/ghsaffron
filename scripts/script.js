@@ -377,7 +377,7 @@
 
   //Piwik Analytic
   var _paq = _paq || [];
-  _paq.push(["setCookieDomain", "dr.bokharaei.ir"]);
+  _paq.push(["setCookieDomain", "ghsaffron.com"]);
   _paq.push(["setDomains", ["*.ghasemsaffron.com","*.ghasemsaffron.ir","*.ghsaffron.ir","*.naserisaffron.com","*.naserisaffron.ir"]]);
   _paq.push(["trackPageView"]);
   _paq.push(["enableLinkTracking"]);
