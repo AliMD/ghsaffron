@@ -375,6 +375,21 @@
     return !err;
   });
 
+  //Piwik Analytic
+  var _paq = _paq || [];
+  _paq.push(["setCookieDomain", "dr.bokharaei.ir"]);
+  _paq.push(["setDomains", ["*.ghasemsaffron.com","*.ghasemsaffron.ir","*.ghsaffron.ir","*.naserisaffron.com","*.naserisaffron.ir"]]);
+  _paq.push(["trackPageView"]);
+  _paq.push(["enableLinkTracking"]);
+
+  (function() {
+    var u="http://a.1dws.com/";
+    _paq.push(["setTrackerUrl", u+"piwik.php"]);
+    _paq.push(["setSiteId", "26"]);
+    var d=document, g=d.createElement("script"), s=d.getElementsByTagName("script")[0]; g.type="text/javascript";
+    g.defer=true; g.async=true; g.src=u+"piwik.js"; s.parentNode.insertBefore(g,s);
+  })();
+
 
 
   if(window.addEventListener) document.addEventListener('DOMMouseScroll', smoothScroll, false);
