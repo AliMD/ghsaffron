@@ -10,10 +10,12 @@
 		}
 
 		.ok {
+			font-size: 20px;
 			color:#1A1;
 		}
 
 		.err {
+			font-size: 20px;
 			color:#A11;
 		}
 	</style>
@@ -22,7 +24,7 @@
 	<?php
 		error_reporting(E_ALL ^ E_NOTICE);
 
-		$admin = 'info@mydomain.com';
+		$admin = 'info@ghsaffron.com';
 		
 		$name		= $_POST['name'];
 		$tell		= $_POST['tell'];
