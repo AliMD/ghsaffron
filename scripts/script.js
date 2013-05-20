@@ -4,7 +4,7 @@
         ($.browser.msie)    ? '-ms-' :
         ($.browser.opera)   ? '-o-' : '',
 
-    menu = {"#aboutus":3600,"#aboutsaffron":7530,"#products":11620,"#certificates":14421,"#laboratory":18386,"#contactus":22382};
+    menu = {"#aboutus":3600,"#aboutsaffron":7530,"#products":11620,"#certificates":14421,"#laboratory":18386,"#contactus":20382};
   
   $(".logo-intro").css(prefix+'transform','scale(1.4)'); // scale logo for intro
   
@@ -307,6 +307,75 @@
       }
     }
   };
+
+
+  // Contact Form Validators
+  var emailPattern = /^[a-z0-9+_%.-]+@(?:[a-z0-9-]+\.)+[a-z]{2,6}$/i,
+    tellPattern = /^[0-9)(\s+-]{11,20}$/i,
+    validateText = function (str,len){
+      return str.length >= len;
+    },
+    validateEmail = function (str){
+      return emailPattern.test(str);
+    },
+    validateTell = function (str){
+      return tellPattern.test(str);
+    };
+
+  // Contact form
+  $('#contact-form').submit(function(){
+    var target=$('#name'), err = false;
+
+    target = $('#name');
+    if( validateText(target.val(),3) ){
+      target.removeClass('err').addClass('ok');
+    }else{
+      target.removeClass('ok').addClass('err');
+      err = true;
+    }
+
+    target = $('#subject');
+    if( validateText(target.val(),5) ){
+      target.removeClass('err').addClass('ok');
+    }else{
+      target.removeClass('ok').addClass('err');
+      err = true;
+    }
+
+    target = $('#tell');
+    if( validateTell(target.val()) ){
+      target.removeClass('err').addClass('ok');
+    }else{
+      target.removeClass('ok').addClass('err');
+      err = true;
+    }
+
+    target = $('#mail');
+    if( validateEmail(target.val()) ){
+      target.removeClass('err').addClass('ok');
+    }else{
+      target.removeClass('ok').addClass('err');
+      err = true;
+    }
+
+    target = $('#msg');
+    if( validateText(target.val(),10) ){
+      target.removeClass('err').addClass('ok');
+    }else{
+      target.removeClass('ok').addClass('err');
+      err = true;
+    }
+
+    if(!err){
+      $('#ifrm').animate({
+        height:'70px'
+      },700);
+    }
+
+    return !err;
+  });
+
+
 
   if(window.addEventListener) document.addEventListener('DOMMouseScroll', smoothScroll, false);
   //document.onmousewheel = smoothScroll;
