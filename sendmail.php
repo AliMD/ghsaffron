@@ -31,12 +31,14 @@
 		$email		= $_POST['mail'];
 		$msg		= $_POST['msg'];
 		$subject	= $_POST['subject'];
+		$sent_msg = $_POST['sent_msg'];
+		$err_msg = $_POST['error_msg'];
 
-		if( strlen($name)>=3 && strlen($email)>=7 && strlen($subject)>=5 && strlen($msg)>=8 && strlen($tell)>=11 ){
+		if( strlen($name)>=3 && strlen($email)>=7 && strlen($msg)>=3 ){
 			if( @mail ( $admin,"ghsaffron.co contact : $subject", "$msg\r\n\r\nMobile: $tell", "From:$admin\r\nReply-To:$name <$email>" ) ){
-				echo '<h2 class="ok">Thank you! Your massage has been send.</h2>';
+				echo "<h2 class='ok'>$sent_msg</h2>";
 			}else{
-				echo '<h2 class="err">Error in sending mail. Please try again!</h2>';
+				echo "<h2 class='ok'>$err_msg</h2>";
 			}
 		}else{
 			echo '<h2 class="err">Error in receive data.</h2>';
