@@ -53,10 +53,9 @@ section#products
 						color rgba(255, 255, 255, 0.65)
 						opacity 0
 						z-index 2
-						font-size 20px
+						font-size 25px
 						font-family 'Pacifico',cursive
-						text-align right
-						font-style italic
+						text-align center
 						padding-left 5px
 						padding-right 15px
 						padding-top 140px
@@ -64,6 +63,17 @@ section#products
 						background-color black
 						border-radius 10px
 						transition all 800ms ease-out
+
+						span
+							display inline-block
+							width 80px
+							background-color hsl(0, 100%, 100%)
+							color hsl(0, 0%, 18%)
+							padding 5px 20px
+							border-radius 5px
+							font-family arial
+							font-weight bold
+							opacity 1
 
 					div.prd-title
 						background-image url(images/line.png)
@@ -108,21 +118,21 @@ section#products
 								border-radius 10px
 
 							&:hover span
-								opacity 0.65
+								opacity 0.8
 								transition-duration 500ms
 
 .ltrLang 
-	section#products 
-		span.prd-hover
-			text-align left
-
+	section#products
 		div.container-slider div.case-train div.train div.product-slide 
 			div.prd-title
 				background-position 180px 23px
 				img
 					float left
 			span.prd-hover
-				text-align left
+				text-align center
+				font-size 20px
+				span
+					width 110px
 .arrowhide
 	display none
 
