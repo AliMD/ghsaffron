@@ -334,21 +334,21 @@
       err = true;
     }
 
-    target = $('#subject');
-    if( validateText(target.val(),5) ){
-      target.removeClass('err').addClass('ok');
-    }else{
-      target.removeClass('ok').addClass('err');
-      err = true;
-    }
+    // target = $('#subject');
+    // if( validateText(target.val(),5) ){
+    //   target.removeClass('err').addClass('ok');
+    // }else{
+    //   target.removeClass('ok').addClass('err');
+    //   err = true;
+    // }
 
-    target = $('#tell');
-    if( validateTell(target.val()) ){
-      target.removeClass('err').addClass('ok');
-    }else{
-      target.removeClass('ok').addClass('err');
-      err = true;
-    }
+    // target = $('#tell');
+    // if( validateTell(target.val()) ){
+    //   target.removeClass('err').addClass('ok');
+    // }else{
+    //   target.removeClass('ok').addClass('err');
+    //   err = true;
+    // }
 
     target = $('#mail');
     if( validateEmail(target.val()) ){
@@ -359,7 +359,7 @@
     }
 
     target = $('#msg');
-    if( validateText(target.val(),10) ){
+    if( validateText(target.val(),3) ){
       target.removeClass('err').addClass('ok');
     }else{
       target.removeClass('ok').addClass('err');
