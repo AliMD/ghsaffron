@@ -403,8 +403,10 @@
 							<input title="موضوع پیام" type="text" name="subject" id="subject" placeholder='موضوع پیام' />
 						</div>
 						<textarea title="متن پیام" name="msg" id="msg" cols="45" rows="12" placeholder='متن پیام'></textarea>
-						<input title="پاک کردن" class="font btn_submit left" name="reset" id='btn_submit' type="reset" value="پاک کردن" />
-						<input title="ارسال" class="font btn_submit left" name="submit" id='btn_submit' type="submit" value="ارسال" />
+						<input title="پاک کردن" class="font btn_submit left" name="reset" id='reset' type="reset" value="پاک کردن" />
+						<input title="ارسال" class="font btn_submit left" name="submit" id='submit' type="submit" value="ارسال" />
+						<input type="hidden" name="sent_msg" id="sent_msg" value="با تشکر، ایمیل شما ارسال شد!" />
+						<input type="hidden" name="error_msg" id="error_msg" value="خطا در ارسال، لطفاً دوباره ارسال کنید!" />
 					</form>
 					<iframe id='ifrm' name='ifrm' src="" frameborder="0" scrolling="no"></iframe>
 				</section>
