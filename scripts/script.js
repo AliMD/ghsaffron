@@ -10,6 +10,12 @@
   
   $("div.language").css('top',(window.innerHeight-450)+'px');
 
+  // for Home Key
+  document.onkeydown = function(e) {
+    e = e || window.event;
+    if(e.keyCode == 36) $.scrollTo(menu["#aboutus"],300);
+  };
+
   var rand = function(a,b){
     if(b===undefined){
       b=a;
