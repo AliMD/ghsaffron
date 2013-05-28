@@ -10,31 +10,65 @@ section#laboratory
 		width 600px
 		height 400px
 		float left
-		div
-			background-repeat no-repeat
-			background-size contain
-			position absolute
-			&.saffron1
-				background-image url("images/prd/product1.png")
-				width 226px
-				height 202px
+		div.prd-slider
+			width 330px
+			height 350px
+			position relative
+			left 110px
+			margin 50px 0 0 50px
+			padding 2px
+			border 1px solid hsl(0, 0%, 47%)
+			&:hover
+				div.prd-prev,
+				div.prd-next
+					transition all 200ms
+					display block
+					opacity 1
+
+			div.prd-prev,
+			div.prd-next
+				width 30px
+				height 30px
+				font-size 35px
+				cursor pointer
+				z-index 50
+				color hsl(0, 0%, 70%)
 				position absolute
-				bottom 72px
-				left -13px
-			&.saffron2
-				background-image url("images/prd/product2.png")
-				width 522px
-				height 330px
-				bottom 30px
-				left 0
-				z-index 10
-			&.saffron3
-				background-image url("images/prd/product3.png")
-				width 287px
-				height 204px
-				bottom 13px
-				left 270px
-				z-index 20
+				top 150px
+				display none
+				opacity 0
+				transition all 200ms
+				background-image url('images/prd_arrow.png')
+				background-repeat no-repeat
+
+			div.prd-prev
+				left 13px
+				background-position 0 0
+
+			div.prd-next
+				right 13px
+				background-position -30px 0
+
+			div.prd-casetrain
+				position relative
+				width 330px
+				height 350px
+				overflow hidden
+
+				div.prd-train
+					width 10000px
+					height 350px
+					overflow hidden
+					position absolute
+					left 0
+
+					& > div
+						width 330px
+						height 350px
+						float left
+						background-image url('images/lab/lab1.jpg')
+						background-repeat no-repeat
+						background-position center center
 
 	& div.des 
 		margin-left 600px
@@ -77,31 +111,33 @@ section#laboratory
 			width 600px
 			height 400px
 			float right
-			div
-				background-repeat no-repeat
-				background-size contain
-				position absolute
-				&.saffron1
-					background-image url("images/prd/product1.png")
-					width 226px
-					height 202px
-					position absolute
-					bottom 72px
-					left -13px
-				&.saffron2
-					background-image url("images/prd/product2.png")
-					width 522px
-					height 330px
-					bottom 30px
-					left 0
-					z-index 10
-				&.saffron3
-					background-image url("images/prd/product3.png")
-					width 287px
-					height 204px
-					bottom 13px
-					left 270px
-					z-index 20
+			// div
+			// 	background-repeat no-repeat
+			// 	background-size contain
+			// 	position absolute
+			// 	&.saffron1
+			// 		background-image url("images/prd/product1.png")
+			// 		width 226px
+			// 		height 202px
+			// 		position absolute
+			// 		bottom 72px
+			// 		left -13px
+			// 	&.saffron2
+			// 		background-image url("images/prd/product2.png")
+			// 		width 522px
+			// 		height 330px
+			// 		bottom 30px
+			// 		left 0
+			// 		z-index 10
+			// 	&.saffron3
+			// 		background-image url("images/prd/product3.png")
+			// 		width 287px
+			// 		height 204px
+			// 		bottom 13px
+			// 		left 270px
+			// 		z-index 20
+			div.prd-slider
+				margin 50px 50px 0 0
 
 html[lang="fa-IR"]
 	section#laboratory
@@ -111,7 +147,7 @@ html[lang="ar-AE"]
 		height 750px
 html[lang="en-US"]
 	section#laboratory
-		height 750px
+		height 770px
 html[lang="es"]
 	section#laboratory
 		height 790px
