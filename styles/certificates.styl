@@ -53,11 +53,12 @@ section#certificates
 					width 321px
 					height 250px
 					float left
-					background-image url(images/cer/HACCP.jpg)
-					background-repeat no-repeat
-					background-position center center
-					background-size contain
-
+					text-align center
+					&.cert_01
+						a
+							img
+								margin-top 30px
+						
 		& div.cert-shadow-line-holder
 			background-image url(images/cert_shadow_line.png)
 			background-repeat no-repeat
@@ -73,14 +74,22 @@ section#certificates
 				width 79px
 				height 61px
 				float left
-				background-image url(images/cer/thumb/HACCP.jpg)
 				background-repeat no-repeat
+				background-position center center
 				background-size contain
 				margin-left 10px
 				cursor pointer
 				opacity .6
 				&.active
 					opacity 1
+				&.cert_tumb_01
+					background-image url('images/cer/thumb/HACCP.jpg')
+				&.cert_tumb_02
+					background-image url('images/cer/thumb/9001-2008.jpg')
+				&.cert_tumb_03
+					background-image url('images/cer/thumb/22000-2005.jpg')
+				&.cert_tumb_04
+					background-image url('images/cer/thumb/estandard.jpg')
 					
 	& div.des 
 		margin-left 600px
