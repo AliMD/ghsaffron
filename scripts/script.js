@@ -10,6 +10,16 @@
   
   $("div.language").css('top',(window.innerHeight-450)+'px');
 
+  // ColorBox
+  $(".port_group").colorbox({
+    rel:'port_group',
+    transition:"fade",
+    scrolling:false,
+    returnFocus:false,
+    maxHeight:window.innerHeight-50,
+    maxWidth:window.innerWidth-50
+  });
+
   // for Home Key event
   document.onkeydown = function(e) {
     e = e || window.event;
