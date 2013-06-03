@@ -211,25 +211,33 @@
   });
 
   // sub product slider
-  var prdTrain = $('div.prd-casetrain div.prd-train'),
-    prdSlides = $("div.prd-casetrain div.prd-train > div"),
-    prdCurrentslide = 0,
+  var 
+    prdTrain1 = $('div.prd-casetrain div.prd-train1'),
+    prdTrain2 = $('div.prd-casetrain div.prd-train2'),
+    prdSlides1 = $("div.prd-casetrain div.prd-train1 > div"),
+    prdSlides2 = $("div.prd-casetrain div.prd-train2 > div"),
+    prdCurrentslide1 = 0,
+    prdCurrentslide2 = 0,
     prdNextBtn = $('div.prd-next'),
     prdPrevBtn = $('div.prd-prev'),
     autoPlayIv = false;
-  go2slide = function(n){
-    if(n>2) n = 0; //prdSlides.length-1
-    if(n<0) n = 2;
-    prdTrain.animate({
+  go2slide = function(n,elm,len){
+    if(n>(len.length-1)) n = 0; //prdSlides.length-1
+    if(n<0) n = (len.length-1);
+    elm.animate({
       'left': -(n*330) + 'px'
     },400);
-    prdCurrentslide=n;
+    curslide=n;
+    if(elm == prdTrain1) prdCurrentslide1 = n;
+    else if(elm == prdTrain2) prdCurrentslide2 = n;
   };
   prdNextBtn.click(nextSlide = function(){
-    go2slide(prdCurrentslide+1);
+    go2slide(prdCurrentslide1+1,prdTrain1,prdSlides1);
+    go2slide(prdCurrentslide2+1,prdTrain2,prdSlides2);
   });
   prdPrevBtn.click(function(){
-    go2slide(prdCurrentslide-1);
+    go2slide(prdCurrentslide1-1,prdTrain1,prdSlides1);
+    go2slide(prdCurrentslide2-1,prdTrain2,prdSlides2);
   });
   (autoPlayStart = function(){
     if(autoPlayIv) return;
