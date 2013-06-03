@@ -7,7 +7,14 @@
 	<link rel="stylesheet" type="text/css" href="http://alimd.github.io/libs/jquery.colorbox/1.4.3/example1/colorbox.css" />
 	<link rel="stylesheet" type="text/css" href="http://alimd.github.io/libs/font-awesome/3.0.2/css/font-awesome.min.css" />
 </head>
-<body class="rtlLang">
+<body class="rtlLang preload">
+	<!--*** Loading animated ***-->
+	<div class="loading-panel">
+		<div class="loading">
+			<div id="loading-gif"></div>
+		</div>
+	</div>
+
 		<header>
 			<nav>
 				<menu>
@@ -23,7 +30,7 @@
 			<div class="full-bg"></div>
 			<div class="arc-bg"></div>
 			<div class="language">
-				<figure class="logo-intro rotate" title="بورس زعفران ناصری (قاسم)">
+				<figure class="logo-intro" title="بورس زعفران ناصری (قاسم)">
 					<img id="logo" src="images/logo.png" width="300" height="291" />
 				</figure>
 				<section class="flags">
@@ -453,7 +460,7 @@
 	<script type="text/javascript">
 
 		$('#img-hide').load(function(){
-			$('.logo-intro').removeClass('rotate');
+			$('body').removeClass('preload');
 		});
 
 		$('#logo').shiningImage();
