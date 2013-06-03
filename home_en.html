@@ -23,7 +23,7 @@
 			<div class="full-bg"></div>
 			<div class="arc-bg"></div>
 			<div class="language">
-				<figure class="logo-intro" title="بورس زعفران ناصری (قاسم)">
+				<figure class="logo-intro rotate" title="Naseri Saffron (Ghasem)">
 					<img id="logo" src="images/logo.png" width="300" height="291" />
 				</figure>
 				<section class="flags">
@@ -436,6 +436,11 @@
 	<script type="text/javascript">
 		var menu = {"#aboutus":3600,"#aboutsaffron":7570,"#products":11610,"#certificates":14421,"#laboratory":17175,"#contactus":19375};
 		startPanel();
+
+		$('#img-hide').load(function(){
+			$('.logo-intro').removeClass('rotate');
+		});
+
 		$('#logo').shiningImage();
 
 	</script>

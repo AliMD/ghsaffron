@@ -23,7 +23,7 @@
 			<div class="full-bg"></div>
 			<div class="arc-bg"></div>
 			<div class="language">
-				<figure class="logo-intro" title="Bourse Safran Naseri (Ghasem)">
+				<figure class="logo-intro rotate" title="Naseri safran (Ghasem)">
 					<img id="logo" src="images/logo.png" width="300" height="291" />
 				</figure>
 				<section class="flags">
@@ -449,6 +449,11 @@
 
 		var menu = {"#aboutus":3600,"#aboutsaffron":7610,"#products":11690,"#certificates":14491,"#laboratory":17221,"#contactus":19721};
 		startPanel();
+
+		$('#img-hide').load(function(){
+			$('.logo-intro').removeClass('rotate');
+		});
+
 		$('#logo').shiningImage();
 		
 	</script>
