@@ -11,6 +11,41 @@ body
 	if !!backColor2 && backColor != backColor2 && backColor2!='backColor2'
 		background-color backColor2
 
+body.preload
+	div.loading-panel
+		display block
+		position fixed
+		top 0
+		right 0
+		bottom 0
+		left 0
+		background-color #871716
+		z-index 9999
+		transition all 1000ms
+
+		div.loading
+			width 200px
+			position absolute
+			top 50%
+			left 0
+			right 0
+			bottom 0
+			margin -32px auto 0
+			div#loading-gif
+				width 64px
+				height 64px
+				background-image url('images/preloading.gif')
+				background-position center top
+				background-repeat no-repeat
+				margin 0 auto
+			p#loading-text
+				margin-top 40px
+				text-align center
+				font-family tahoma
+
+div.loading-panel
+	display none
+
 header
 	position fixed
 	width auto
