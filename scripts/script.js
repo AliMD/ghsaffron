@@ -252,7 +252,7 @@
 
   //certificates slider
   var trainCert = $('section.background_holder'),
-    listsCert = $('section.thumb_holder div')
+    listsCert = $('section.thumb_holder div'),
     currentSlideCert = 0,
     autoPlayCert = false;
 
